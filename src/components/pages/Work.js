@@ -1,12 +1,12 @@
-import { Container, Grid, Tabs, Typography, Tab, Box } from '@mui/material'
+import { Container, Grid, Tabs, Typography, Button, Tab, Box } from '@mui/material'
 import * as React from 'react'
 
 export const Work = (props) => {
 
-    const [valueOne, setValueTabOne] = React.useState(0);
-    const [valueTwo, setValueTabTwo] = React.useState(0);
-    const [valueThree, setValueTabThree] = React.useState(0);
-    const [valueFour, setValueTabFour] = React.useState(0);
+    const [valueOne, setValueTabOne] = React.useState(1);
+    const [valueTwo, setValueTabTwo] = React.useState(1);
+    const [valueThree, setValueTabThree] = React.useState(1);
+    const [valueFour, setValueTabFour] = React.useState(1);
 
 
     const handleChangeOne  = (event, newValue) => {
@@ -66,7 +66,19 @@ export const Work = (props) => {
                             <div style={{minHeight: '200px'}}>Bankless Academy</div>
                         </TabPanel>
                         <TabPanel value={valueOne} index={1}>
-                            <div style={{minHeight: '200px'}}>Bankless Consulting</div>
+                            <div style={{minHeight: '200px'}}>
+                                { /* Bankless Consulting */ }
+                                <Grid container>
+                                    <Grid item xs={12} md={6} style={{padding: '25px'}}>
+                                        <img src={process.env.PUBLIC_URL + '/assets/media/bconsulting.png'} alt="Bankless Consulting" style={{maxWidth: '100%'}} />
+                                    </Grid>
+                                    <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+                                        <p className="biggerText">Our Web3-native consulting service draws on the expertise of bDAO members to help DAOs launch and scale their presence.
+                                            Bankless Consultancy also helps traditional organizations take the first step into Web3.</p> 
+                                        <a href="https://www.banklessconsulting.com/" target="_blank" rel="noreferrer" className='destyle'><Button variant="contained" color="error">Visit Bankless Consulting</Button></a>
+                                    </Grid>
+                                </Grid>
+                            </div>
                         </TabPanel>
                         <TabPanel value={valueOne} index={2}>
                             <div style={{minHeight: '200px'}}>Global Tax Consulatancy</div>
@@ -81,7 +93,7 @@ export const Work = (props) => {
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueTwo} onChange={handleChangeTwo} aria-label="basic tabs example" >
+                            <Tabs value={valueTwo} onChange={handleChangeTwo} aria-label="basic tabs example">
                             <Tab label="Degen" {...a11yProps(0)} className="fontTab" />
                             <Tab label="Bounty Board" {...a11yProps(1)}  className="fontTab"/>
                             <Tab label="DAO Dash" {...a11yProps(2)}  className="fontTab"/>

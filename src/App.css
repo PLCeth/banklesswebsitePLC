@@ -189,3 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 .fontTab {
   font-size: 0.8em !important;
 }
+
+.biggerText {
+  font-size: 1.6em;
+}
