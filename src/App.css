@@ -210,3 +210,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #aaa;
   line-height: 1.5em;
 }
+
+.grayButt {
+  background-color: #444 !important;
+  color: #fff !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.biggerLines {
+  line-height: 1.5em;
+  color: #999;
+}

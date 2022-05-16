@@ -27,7 +27,7 @@ export const NewMembers = (props) => {
                         <a href="https://discord.com/invite/bankles" className='destyle' target="_blank" rel="noreferrer"><Button variant="contained" color="error">Join now</Button></a>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" style={{maxWidth: '100%'}} />
                     </Grid>
                 </Grid>
             </Container>

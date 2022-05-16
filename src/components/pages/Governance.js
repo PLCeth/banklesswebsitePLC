@@ -1,4 +1,4 @@
-import { Container, Grid } from '@mui/material'
+import { Container, Grid, Button } from '@mui/material'
 import * as React from 'react'
 
 
@@ -78,6 +78,151 @@ export const Governance = (props) => {
 
                     <Grid item xs={12} md={12}  style={{padding: '20px'}}>
                         <h1>QUORUM REQUIREMENTS</h1>
+                        <p className='textWreck'>Depending on the financial ask, quorum requirements for forum posts are scaled. The table below shows how many voters will need to be present to approve your request.</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={8}>
+                        <div style={{backgroundColor: '#222', padding: '10px'}}>
+                            <Grid container>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#111', padding: '5px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Funding Requested</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#111', padding: '5px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Number of voters required</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Less than 50,000 BANK</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>25 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>50,001 - 250,000 BANK</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>31 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>250,001 - 500,000 BANK</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>40 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>500,001 - 1,000,000 BANK</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>51 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Greater than 1,000,001 BANK</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>63 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Governance proposals</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>63 voters</h3>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>Emergency proposals</h3>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                    <h3 className='centered'>91 voters</h3>
+                                    </div>
+                                </Grid>
+                            </Grid>
+
+                        </div>
+                    </Grid>
+
+                    <Grid item xs={12} md={12} style={{backgroundColor: 'rgb(34, 0, 1)', borderRadius: '20px', padding: '20px', marginTop: '100px'}}>
+                        <h1>Seasons</h1>
+                        <p className='textWreck'>A Season at bDAO is similar to a corporate quarter and generally lasts three months. They provide funding landmarks for bDAO coordinators and the Grants Committee. Each season has a fixed amount of BANK allocated to pay contributors in the DAO.</p>
+                        <p className='textWreck' style={{color: '#fff'}}>Read our Seasonal Specifications on Mirror:</p>
+                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                            <Button className="grayButt" >Season 1</Button>
+                            <Button className="grayButt">Season 2</Button>
+                            <Button className="grayButt">Season 3</Button>
+                        </div>
+                    </Grid>
+
+                    <Grid item xs={12} md={12} style={{paddingTop: '75px'}}>
+                        <h1 style={{textAlign: 'center'}}>CONTRIBUTOR LEVELS</h1>
+                        <p className='textWreck' style={{textAlign: 'center'}}>Membership delineation is an important aspect of governance. BanklessDAO server members fit into these categories:</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{padding: '15px'}}>
+                        <h2>Guest Pass</h2>
+                        <p className='biggerLines'>An individual who does not yet have 35,000 BANK in their wallet. This person can participate in the DAO for free, but must have their pass renewed every two weeks by a Level 2 (L2) contributor.</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{padding: '15px'}}>
+                        <h2>MEMBER Level 1:</h2>
+                        <p className='biggerLines'>An individual who has 35,000 BANK in their wallet. L1s have access to perks and are eligible to be nominated to L2.</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{padding: '15px'}}>
+                        <h2>CONTRIBUTOR level 2:</h2>
+                        <p className='biggerLines'>An individual who has 35,000 BANK in their wallet and has been nominated by and voted in by the existing L2 contributors. L2s are trusted community members who embody the BanklessDAO mission.</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{padding: '15px'}}>
+                        <h2>WHALE Level 3:</h2>
+                        <p className='biggerLines'>An individual who has 150,000 BANK in their wallet.</p>
+                    </Grid>
+
+                    <Grid item xs={12} md={8} style={{padding: '10px'}}>
+                        <h1>Get Started in Governance Today</h1>
+                        <p className='textWreck'>Join the <span style={{color:'#f00'}}>Discussion on Forums</span></p>
+                        <a href="" style={{padding: '5px', borderBottom: '1px solid #111', color: '#fff'}}>Buy Bank</a>
+                    </Grid>
+                    <Grid item xs={12} md={4} style={{padding: '10px'}}>
+                    <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" style={{maxWidth: '100%'}} />
+                    </Grid>
+
+                    <Grid item xs={12} md={12}>
+                        <h2 style={{padding: '20px', textAlign: 'center'}}>Join the <span style={{color: '#f00'}}>Discord Server</span></h2>
                     </Grid>
                 </Grid>
             </Container>
