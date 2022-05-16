@@ -137,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+.elipBG {
+  background: radial-gradient(ellipse at bottom center, #000 0%,#000 55%, rgba(82, 0, 0, 0.7) 70%, #000, 72%, transparent 100%);
+}
+
 /* Menu Styling */
 .MuiMenu-list {
   background-color: #000;
