@@ -13,7 +13,7 @@ export const NewMembers = (props) => {
                         <p>BanklessDAO’s ever-growing community of creatives, developers, innovators, and leaders is open to all. Always.</p>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/members.png'} alt="Members" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/members.png'} style={{maxWidth: '100%'}} alt="Members" />
                     </Grid>
 
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
