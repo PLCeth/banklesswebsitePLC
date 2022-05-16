@@ -55,11 +55,11 @@ export const Work = (props) => {
                         <p style={{textAlign: 'center'}}>Learn from Web3 experts</p>
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueOne} onChange={handleChangeOne} aria-label="basic tabs example">
-                            <Tab label="Bankless Academy" {...a11yProps(0)} />
-                            <Tab label="Bankless Consulting" {...a11yProps(1)} />
-                            <Tab label="Global Tax Consulatancy" {...a11yProps(2)} />
+                        <Box sx={{ borderBottom: 1, borderColor: 'divider'}}  style={{display: 'flex', justifyContent: 'space-around'}}>
+                            <Tabs value={valueOne} onChange={handleChangeOne} aria-label="basic tabs example" >
+                            <Tab label="Bankless Academy" {...a11yProps(0)} className="fontTab" />
+                            <Tab label="Bankless Consulting" {...a11yProps(1)} className="fontTab" />
+                            <Tab label="Global Tax Consulatancy" {...a11yProps(2)} className="fontTab" />
                             </Tabs>
                         </Box>
                         <TabPanel value={valueOne} index={0}>
@@ -81,10 +81,10 @@ export const Work = (props) => {
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueTwo} onChange={handleChangeTwo} aria-label="basic tabs example">
-                            <Tab label="Degen" {...a11yProps(0)} />
-                            <Tab label="Bounty Board" {...a11yProps(1)} />
-                            <Tab label="DAO Dash" {...a11yProps(2)} />
+                            <Tabs value={valueTwo} onChange={handleChangeTwo} aria-label="basic tabs example" >
+                            <Tab label="Degen" {...a11yProps(0)} className="fontTab" />
+                            <Tab label="Bounty Board" {...a11yProps(1)}  className="fontTab"/>
+                            <Tab label="DAO Dash" {...a11yProps(2)}  className="fontTab"/>
                             </Tabs>
                         </Box>
                         <TabPanel value={valueTwo} index={0}>
@@ -107,10 +107,10 @@ export const Work = (props) => {
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
                             <Tabs value={valueThree} onChange={handleChangeThree} aria-label="basic tabs example">
-                            <Tab label="Custom Articles" {...a11yProps(0)} />
-                            <Tab label="State of the DAOS Newsletter feature" {...a11yProps(1)} />
-                            <Tab label="Custom Designs" {...a11yProps(2)} />
-                            <Tab label="Audio/Visual Services" {...a11yProps(3)} />
+                            <Tab label="Custom Articles" {...a11yProps(0)}  className="fontTab"/>
+                            <Tab label="DAOS Newsletter" {...a11yProps(1)}  className="fontTab"/>
+                            <Tab label="Custom Designs" {...a11yProps(2)}  className="fontTab"/>
+                            <Tab label="Audio/Visual Services" {...a11yProps(3)}  className="fontTab"/>
                             </Tabs>
                         </Box>
                         <TabPanel value={valueThree} index={0}>
@@ -136,9 +136,9 @@ export const Work = (props) => {
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
                             <Tabs value={valueFour} onChange={handleChangeFour} aria-label="basic tabs example">
-                            <Tab label="Newsletter Sponsorships" {...a11yProps(0)} />
-                            <Tab label="Podcast Sponsorships" {...a11yProps(1)} />
-                            <Tab label="Marketing Services" {...a11yProps(2)} />
+                            <Tab label="Newsletter Sponsorships" {...a11yProps(0)} className="fontTab" />
+                            <Tab label="Podcast Sponsorships" {...a11yProps(1)} className="fontTab" />
+                            <Tab label="Marketing Services" {...a11yProps(2)} className="fontTab" />
                             </Tabs>
                         </Box>
                         <TabPanel value={valueFour} index={0}>
@@ -172,7 +172,7 @@ const TabPanel = (props) => {
       >
         {value === index && (
           <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
+            <Typography >{children}</Typography>
           </Box>
         )}
       </div>
