@@ -3,6 +3,7 @@ import * as React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { Fade, Slide } from 'react-reveal';
+import { Circles } from '../Circles';
 
 export const HomePage = (props) => {
 
@@ -270,13 +271,17 @@ export const HomePage = (props) => {
                     </Fade>
                 </Grid>
 
-
-
                 <Grid container style={{paddingTop: '100px', paddingBottom: '100px'}}>
                     <Grid item xs={12} md={6}>
                         <h1>Start Your Journey</h1>
                     </Grid>
+
+                    <Grid item xs={12} md={12}>
+                        <Circles />
+                    </Grid>
                 </Grid>
+
+
             </Container>
         </div>
 
