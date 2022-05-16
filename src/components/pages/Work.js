@@ -1,5 +1,6 @@
 import { Container, Grid, Tabs, Typography, Button, Tab, Box } from '@mui/material'
 import * as React from 'react'
+import { Fade } from 'react-reveal';
 
 export const Work = (props) => {
 
@@ -27,6 +28,7 @@ export const Work = (props) => {
     return (
         <div style={{minHeight: '100vh'}}>
 
+            <Fade>
             <Container style={{paddingTop: '100px', paddingBottom: '40px'}}>
 
                 <Grid container style={{justifyContent:'center'}}>
@@ -40,13 +42,14 @@ export const Work = (props) => {
 
                 </Grid>
             </Container>
+            
 
             <Grid container>
                 <Grid item xs={12} md={12} style={{textAlign: 'center'}}>
                     <img src={process.env.PUBLIC_URL + '/assets/media/wwus.png'} alt="Work with Us" style={{maxWidth: '100%'}}/>
                 </Grid>
             </Grid>
-
+            </Fade>
 
             <Container>
                 <Grid container>
