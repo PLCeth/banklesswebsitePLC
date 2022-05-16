@@ -30,14 +30,14 @@ export const Governance = (props) => {
                         <div className='divider'></div>
                     </Grid>
 
-                    <Grid item xs={6} md={6}  style={{padding: '20px'}}>
+                    <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <div style={{display: 'flex', alignItems: 'center'}}>
                         <img src={process.env.PUBLIC_URL + '/assets/media/support.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>GAIN SUPPORT</h3>     
                         </div>
                         <p className='textWreck'>Pitch your idea to fellow contributors so you can find a group that aligns with your goals and wants to see your idea come to life. Typically, this involves hours spent on multiple Discord meetings and lots of discussions in channels. You are encouraged to have these conversations in public channels so that other like-minded individuals can get involved.</p>               
                     </Grid>
-                    <Grid item xs={6} md={6}  style={{padding: '20px'}}>
+                    <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <div style={{display: 'flex', alignItems: 'center'}}>
                         <img src={process.env.PUBLIC_URL + '/assets/media/draft.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>DRAFT A PROPOSAL</h3>        
@@ -45,7 +45,7 @@ export const Governance = (props) => {
                         <p className='textWreck'>Write a forum post following this template. The bDAO community will vote on your proposal and leave feedback on our forum. If your proposal is particularly complex or technical, share educational materials so voters can better understand it and make an informed decision.</p>            
                     </Grid>
 
-                    <Grid item xs={6} md={6}  style={{padding: '20px'}}>
+                    <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <div style={{display: 'flex', alignItems: 'center'}}>
                         <img src={process.env.PUBLIC_URL + '/assets/media/workshop.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>WORKSHOP THE PROPOSAL</h3>        
@@ -53,7 +53,7 @@ export const Governance = (props) => {
                         <p className='textWreck'>The majority of proposals don’t pass muster in their original form. This is our iteration process in action. Keep an eye out for the comments and feedback from our contributors on your proposal: they are invaluable to making it a success. Incorporate the feedback you get and prepare a second or third draft if necessary.</p>            
                     </Grid>
 
-                    <Grid item xs={6} md={6}  style={{padding: '20px'}}>
+                    <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <div style={{display: 'flex', alignItems: 'center'}}>
                         <img src={process.env.PUBLIC_URL + '/assets/media/vote.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>VOTE</h3>        
