@@ -156,6 +156,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
+.destyle {
+  color: inherit;
+  text-decoration: none;
+}
+
 .circledPic {
   border-radius: 100%;
   max-width: 200px;
@@ -165,4 +170,18 @@ h1, h2, h3, h4, h5, h6 {
 .circleP {
   text-align: center;
   padding-bottom: 30px;
+}
+
+
+/* Tabs */
+
+.MuiTab-root {
+  color: #fff !important;
+}
+.Mui-selected {
+  color: #fff !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #f00 !important;
 }

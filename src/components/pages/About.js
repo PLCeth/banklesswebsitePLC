@@ -10,7 +10,7 @@ export const About = (props) => {
             <Container>
                 <Fade>
                 <Grid container>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} style={{minHeight: '350px'}}>
                         <img src={process.env.PUBLIC_URL + '/assets/media/instructor.png'} alt="Instructor" style={{maxWidth: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column'}}>
