@@ -1,8 +1,17 @@
 body {
-  background: radial-gradient(ellipse at top left, rgb(82, 0, 0), #000, 80%, #000 100%);
   background-size: cover;
   background-repeat:no-repeat;
   color: #ddd;
+}
+
+.backgroundImage {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top left, rgb(82, 0, 0), #000, 80%, #000 100%);
 }
 
 html {

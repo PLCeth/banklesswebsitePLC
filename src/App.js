@@ -19,6 +19,7 @@ function App() {
     <div className='mainColors'>
       <Router>
         <MainAppBar />
+        <div className='backgroundImage' />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />

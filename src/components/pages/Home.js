@@ -2,14 +2,14 @@ import { Button, Container, Grid } from '@mui/material'
 import * as React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-import { Fade  } from 'react-reveal';
+import { Fade, Slide } from 'react-reveal';
 
 export const HomePage = (props) => {
 
 
     return (
-        <Fade>
         <div style={{paddingBottom: '100px'}}>
+            <Fade>
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={12}>
@@ -25,15 +25,22 @@ export const HomePage = (props) => {
             <video  autoPlay loop muted id="background-video">
                 <source src={process.env.PUBLIC_URL + '/assets/media/DAOhandLogo.mp4'} type="video/mp4" />
             </video>
+            </Fade>
+
 
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
+
+                        <Slide bottom>
                         <h2 style={{textTransform: 'uppercase', textAlign: 'center'}}>We Take a Decentralized approach To:</h2>
                         <div className='divider'></div>
+
+                        </Slide>
                     </Grid>
 
                     <Grid item xs={12} md={6}>
+                        <Fade>
                         <div className="gridBox">
                             <img src={process.env.PUBLIC_URL + '/assets/media/media.jpg'} alt="Media" className='gridImage'/>
                             <div className="paddedBox">
@@ -49,9 +56,11 @@ export const HomePage = (props) => {
                                 </div>
                             </div>
                         </div>
+                        </Fade>
                     </Grid>
 
                     <Grid item xs={12} md={6}>
+                        <Fade>
                         <div className="gridBox">
                             <img src={process.env.PUBLIC_URL + '/assets/media/consulting.jpg'} alt="Consulting" className='gridImage'/>
                             <div className="paddedBox">
@@ -68,9 +77,11 @@ export const HomePage = (props) => {
                                 </div> 
                             </div>
                         </div>
+                        </Fade>
                     </Grid>
 
                     <Grid item xs={12} md={6}>
+                        <Fade>
                         <div className="gridBox">
                             <img src={process.env.PUBLIC_URL + '/assets/media/dao-tooling.jpg'} alt="DAO Tooling" className='gridImage'/>
                             <div className="paddedBox">
@@ -87,10 +98,12 @@ export const HomePage = (props) => {
                                 </div> 
                             </div>
                         </div>
+                        </Fade>
                     </Grid>
 
 
                     <Grid item xs={12} md={6}>
+                        <Fade>
                         <div className="gridBox">
                             <img src={process.env.PUBLIC_URL + '/assets/media/coming-home.jpg'} alt="Coming Home" className='gridImage'/>
                             <div className="paddedBox">
@@ -107,8 +120,8 @@ export const HomePage = (props) => {
                                 </div> 
                             </div>
                         </div>
+                        </Fade>
                     </Grid>
-
 
                     <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
                         <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>Community-Owned and Operated through the:</h1>
@@ -136,6 +149,7 @@ export const HomePage = (props) => {
             </Grid>
 
             <Container>
+                <Fade>
                 <div className='whiteBox'>
                     <h2 style={{textAlign: 'center', color:'#000'}}>Onboarding 1 billion people, Minting 1 billion BANK tokens</h2>
                     <div style={{display: 'flex', justifyContent: 'space-around', padding: '20px', flexWrap: 'wrap'}}>
@@ -143,20 +157,29 @@ export const HomePage = (props) => {
                         <Button variant="contained" style={{backgroundColor: '#FFF', color: '#F00'}}>BANK TOKEN LEGAL ASSESSMENT</Button>
                     </div>
                 </div>
+                </Fade>
 
 
                 <Grid container style={{paddingTop: '100px'}}>
+
+
                     <Grid item xs={12} md={3} style={{justifyContent: 'center', display: 'flex', marginTop: '20px'}}>
+                        <Slide bottom>
                         <img src={process.env.PUBLIC_URL + '/assets/media/david-hoffman.jpg'} alt="David Hoffman" className='circledPic' style={{boxShadow: '-18px 0px 35px red'}} />
+                        </Slide>
                     </Grid>
                     <Grid item xs={12} md={3} style={{justifyContent: 'center', display: 'flex', marginTop: '20px'}}>
+                        <Slide bottom>
                         <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="Ryan Sean Adams" className='circledPic' style={{boxShadow: '18px 0px 35px red'}}  />
+                        </Slide>
                     </Grid>
                     <Grid item xs={12} md={6} style={{padding: '20px'}}>
+                        <Fade>
                         <div style={{fontSize: '1.4em', color: '#999', lineHeight: '1.5em'}}>
                             BanklessDAO was founded by <span style={{fontWeight: 'bold', color: '#FFF'}}>David Hoffman</span> and <span style={{fontWeight: 'bold', color: '#FFF'}}>Ryan Sean Adams</span> on May 4th, 2021, when they airdropped 35,000 BANK tokens to 
                             each Bankless premium subscriber.
                         </div>
+                        </Fade>
                     </Grid>
 
                     <Grid item xs={12} md={12} style={{textAlign: 'center', lineHeight: '1.75em', padding: '20px', color: '#999', paddingTop: '75px'}}>
@@ -172,6 +195,7 @@ export const HomePage = (props) => {
 
                     { /* People Grid */ }
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
+
                         <Grid item xs={12} md={4} className="circleP">
                             <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Kouros</h3>
@@ -201,13 +225,18 @@ export const HomePage = (props) => {
                             <img src={process.env.PUBLIC_URL + '/assets/media/people/links.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Links</h3>
                         </Grid>
+
                     </Grid>
 
                     <Grid item xs={12} md={12} style={{paddingTop: '75px'}}>
+
+                        <Slide bottom>
                         <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>Grants Committee Members</h1>
                         <div className='divider'></div>
+                        </Slide>
                     </Grid>
 
+                    <Fade >
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
                         <Grid item xs={12} md={4} className="circleP">
                             <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
@@ -238,6 +267,7 @@ export const HomePage = (props) => {
                             <h3>RedVan</h3>
                         </Grid>
                     </Grid>
+                    </Fade>
                 </Grid>
 
 
@@ -249,7 +279,6 @@ export const HomePage = (props) => {
                 </Grid>
             </Container>
         </div>
-        </Fade>
 
     )
 }
