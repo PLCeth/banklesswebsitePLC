@@ -2,10 +2,13 @@ import { Button, Container, Grid } from '@mui/material'
 import * as React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+import { Fade  } from 'react-reveal';
+
 export const HomePage = (props) => {
 
 
     return (
+        <Fade>
         <div style={{paddingBottom: '100px'}}>
             <Container>
                 <Grid container>
@@ -246,6 +249,7 @@ export const HomePage = (props) => {
                 </Grid>
             </Container>
         </div>
+        </Fade>
 
     )
 }
