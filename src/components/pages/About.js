@@ -16,7 +16,7 @@ export const About = (props) => {
                     <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column'}}>
                         <h1>WANT ALPHA?</h1>
                         <h2>Join BanklessDAO</h2>
-                        <a href="#" style={{color: '#FFF'}}>RSA</a>
+                        <a href="#k" style={{color: '#FFF'}}>RSA</a>
                     </Grid>
                 </Grid>
                 </Fade>
