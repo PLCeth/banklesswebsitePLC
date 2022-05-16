@@ -7,6 +7,7 @@ export const Footer = (props) => {
 
     return (
         <div>
+            <div className="elip"></div>
             <Container>
             <Grid container>
                 <Grid item xs={12} md={6}>

@@ -24,7 +24,7 @@ export const About = (props) => {
                 <Grid container style={{paddingTop: '150px'}}>
                     <Grid item xs={12} md={8} style={{padding: '20px'}} order={{xs: 2, md: 1}}>
                         <h3 style={{textAlign: 'right'}}>Bankless is a movement for Web3 pioneers</h3>
-                        <p style={{fontSize: '1.2em', lineHeight: '1.8em', color: '#aaa'}}>We seek new ways to build wealth, solve human coordination problems, create culture, and develop cutting-edge thought
+                        <p style={{fontSize: '1.2em', lineHeight: '1.8em', color: '#ccc'}}>We seek new ways to build wealth, solve human coordination problems, create culture, and develop cutting-edge thought
                         leadership in the crypto space. Going Bankless means taking control of your financial health by adopting decentralized 
                         and permissionless money systems. Bankless is the movement educating the world on how to do it.</p>
                     </Grid>
@@ -37,7 +37,7 @@ export const About = (props) => {
                     </Grid>
                     <Grid item xs={12} md={8} style={{padding: '20px', paddingTop: '50px'}} order={{xs: 4, md: 4}}>
                         <h3 style={{textAlign: 'left'}}>BanklessDAO is the homebase</h3>
-                        <p style={{fontSize: '1.2em', lineHeight: '1.8em', color: '#aaa'}}>
+                        <p style={{fontSize: '1.2em', lineHeight: '1.8em', color: '#ccc'}}>
                             BanklessDAO is a community of passionate Web3 thought-leaders who aim to educate new users, produce written and audio media, 
                             build DAO tooling, provide consulting services, develop Web3 scholarship, and create a social and creative home base for 
                             anyone in Web3. We’re so much more than a social DAO—we’re a shipping, building, and innovating DAO.</p>
