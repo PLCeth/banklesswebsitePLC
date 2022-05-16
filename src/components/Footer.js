@@ -22,20 +22,20 @@ export const Footer = (props) => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <div style={{display: 'flex', justifyContent: 'space-between', padding: '20px'}}>
-                        <div><a href="https://pro.olympusdao.finance/#/bond" className='destyle' target="_blank" rel="nonreferrer">Join Olympus Pro</a></div>
-                        <div><a href="https://etherscan.io/token/0x2d94aa3e47d9d5024503ca8491fce9a2fb4da198" className="destyle" target="_blank" rel="nonreferrer">BANK</a></div>
+                        <div><a href="https://pro.olympusdao.finance/#/bond" className='destyle' target="_blank" rel="noreferrer">Join Olympus Pro</a></div>
+                        <div><a href="https://etherscan.io/token/0x2d94aa3e47d9d5024503ca8491fce9a2fb4da198" className="destyle" target="_blank" rel="noreferrer">BANK</a></div>
                     </div>
                     <div style={{display: 'flex', justifyContent: 'space-between', padding: '20px'}}>
-                        <div><a href="https://dyor-crypto.fandom.com/wiki/Bankless_DAO_(BANK)" className="destyle" target="_blank" rel="nonreferrer">Wiki</a></div>
-                        <div><a href="https://forum.bankless.community/privacy" className="destyle" target="_blank" rel="nonreferrer">Privacy</a></div>
+                        <div><a href="https://dyor-crypto.fandom.com/wiki/Bankless_DAO_(BANK)" className="destyle" target="_blank" rel="noreferrer">Wiki</a></div>
+                        <div><a href="https://forum.bankless.community/privacy" className="destyle" target="_blank" rel="noreferrer">Privacy</a></div>
                     </div>
                     <div style={{display: 'flex', justifyContent: 'space-between', padding: '20px'}}>
-                        <div><a href="https://forum.bankless.community/" className="destyle" target="_blank" rel="nonreferrer">Forum</a></div>
-                        <div><a href="https://github.com/BanklessDAO" className="destyle" target="_blank" rel="nonreferrer">Github</a></div>
+                        <div><a href="https://forum.bankless.community/" className="destyle" target="_blank" rel="noreferrer">Forum</a></div>
+                        <div><a href="https://github.com/BanklessDAO" className="destyle" target="_blank" rel="noreferrer">Github</a></div>
                     </div>
                     <div style={{display: 'flex', justifyContent: 'space-between', padding: '20px'}}>
-                        <div><a href="https://snapshot.org/#/banklessvault.eth" className="destyle" target="_blank" rel="nonreferrer">Vote</a></div>
-                        <div><a href="https://www.twitch.tv/banklessdao" className="destyle" target="_blank" rel="nonreferrer">TwitchTV</a></div>
+                        <div><a href="https://snapshot.org/#/banklessvault.eth" className="destyle" target="_blank" rel="noreferrer">Vote</a></div>
+                        <div><a href="https://www.twitch.tv/banklessdao" className="destyle" target="_blank" rel="noreferrer">TwitchTV</a></div>
                     </div>
                 </Grid>
             </Grid>
