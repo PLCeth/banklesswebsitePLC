@@ -1,4 +1,4 @@
-import { Container, Grid } from '@mui/material'
+import { Button, Container, Grid } from '@mui/material'
 import * as React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -6,7 +6,7 @@ export const HomePage = (props) => {
 
 
     return (
-        <div>
+        <div style={{paddingBottom: '100px'}}>
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={12}>
@@ -118,19 +118,116 @@ export const HomePage = (props) => {
             <Grid container>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.png'} alt="Bankless Coin" style={{maxWidth: '400px'}}/>
+                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.png'} alt="Bankless Coin" style={{maxWidth: '300px'}}/>
                     <h2 style={{paddingTop: '20px'}}>BANK Token</h2>
                 </Grid>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.png'} alt="Ethereum" style={{maxWidth: '280px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.png'} alt="Ethereum" style={{maxWidth: '200px'}} />
                     <h2 style={{paddingTop: '20px'}}>Ethereum Blockchain</h2>
                 </Grid>
 
-                <Grid item xs={12} md={12}>
-                    <h1 style={{textTransform: 'uppercase', color: '#111', textAlign: 'center', letterSpacing: '10px'}}>The Most Widely-held social token</h1>
+                <Grid item xs={12} md={12} style={{paddingTop: '100px', paddingBottom: '100px'}}>
+                    <h1 style={{textTransform: 'uppercase', color: '#222', textAlign: 'center', letterSpacing: '10px'}}>The Most Widely-held social token</h1>
                 </Grid>
             </Grid>
+
+            <Container>
+                <div className='whiteBox'>
+                    <h2 style={{textAlign: 'center', color:'#000'}}>Onboarding 1 billion people, Minting 1 billion BANK tokens</h2>
+                    <div style={{display: 'flex', justifyContent: 'space-around', padding: '20px', flexWrap: 'wrap'}}>
+                        <Button variant="contained" color="error" style={{marginBottom: '10px'}}>Buy BANK</Button>
+                        <Button variant="contained" style={{backgroundColor: '#FFF', color: '#F00'}}>BANK TOKEN LEGAL ASSESSMENT</Button>
+                    </div>
+                </div>
+
+
+                <Grid container style={{paddingTop: '100px'}}>
+                    <Grid item xs={6} md={3}>
+                        <img src={process.env.PUBLIC_URL + '/assets/media/david-hoffman.jpg'} alt="David Hoffman" className='circledPic' style={{boxShadow: '-18px 0px 35px red'}} />
+                    </Grid>
+                    <Grid item xs={6} md={3}>
+                        <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="Ryan Sean Adams" className='circledPic' style={{boxShadow: '18px 0px 35px red'}}  />
+                    </Grid>
+                    <Grid item xs={12} md={6} style={{padding: '20px'}}>
+                        <div style={{fontSize: '1.4em', color: '#999', lineHeight: '1.5em'}}>
+                            BanklessDAO was founded by <span style={{fontWeight: 'bold', color: '#FFF'}}>David Hoffman</span> and <span style={{fontWeight: 'bold', color: '#FFF'}}>Ryan Sean Adams</span> on May 4th, 2021, when they airdropped 35,000 BANK tokens to 
+                            each Bankless premium subscriber.
+                        </div>
+                    </Grid>
+
+                    <Grid item xs={12} md={12} style={{textAlign: 'center', lineHeight: '1.75em', padding: '20px', color: '#999', paddingTop: '75px'}}>
+                    Following the true ethos of decentralization, they stepped back and let the DAO take shape. While their media company, Bankless LLC, 
+                    continues to operate as its own media node, the Bankless brand is propagated through the DAO and its sub-DAOs. Now, the Bankless ecosystem 
+                    as a whole creates user-friendly onramps for people to discover decentralized financial technologies through education, media and culture.
+                    </Grid>
+
+                    <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
+                        <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>Treasury Multi-Sig Owners</h1>
+                        <div className='divider'></div>
+                    </Grid>
+
+                    { /* People Grid */ }
+                    <Grid container style={{display: 'flex', justifyContent: 'center'}}>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>LivetheLifeTV</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3 >Kouros</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3 >0xLucas</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>Eagle.eth</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>tommyolofsson</h3>
+                        </Grid>
+                    </Grid>
+
+                    <Grid item xs={12} md={12} style={{paddingTop: '75px'}}>
+                        <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>Grants Committee Members</h1>
+                        <div className='divider'></div>
+                    </Grid>
+
+                    <Grid container style={{display: 'flex', justifyContent: 'center'}}>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>LivetheLifeTV</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3 >Kouros</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3 >0xLucas</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>Eagle.eth</h3>
+                        </Grid>
+                        <Grid item xs={6} md={4} style={{textAlign: 'center'}}>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <h3>tommyolofsson</h3>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+
+
+                <Grid container style={{paddingTop: '100px', paddingBottom: '100px'}}>
+                    <Grid item xs={12} md={6}>
+                        <h1>Start Your Journey</h1>
+                    </Grid>
+                </Grid>
+            </Container>
         </div>
 
     )
