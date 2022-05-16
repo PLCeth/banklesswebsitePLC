@@ -9,8 +9,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'About Us', 'Work', "Read", "Listen", "Invest", "New Members", "Governance"];
+class Page {
+    constructor(name, path) {
+        this.name = name;
+        this.path = path;
+    }
+}
+
+
+const pages = [
+    new Page('Home','/'), 
+    new Page('About Us','/about'), 
+    new Page('Work','/work'), 
+    new Page("Read",'/read'), 
+    new Page("Listen", '/listen'), 
+    new Page("Invest", '/invest'), 
+    new Page("New Members", '/newmembers'), 
+    new Page("Governance", "/governance")
+];
 
 
 export const MainAppBar = () => {
@@ -78,8 +96,8 @@ export const MainAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -103,16 +121,19 @@ export const MainAppBar = () => {
             <img src={process.env.PUBLIC_URL + '/assets/media/bankless.png'} alt='Bankless'  className="logoStyle" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end', paddingRight: '25px' } }}>
-            {pages.map((page) => (
+            {pages.map((page) => {
+                return(
+                <Link to={page.path} style={{textDecoration: 'none'}}>
               <Button
                 className='menuButton'
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
-            ))}
+              </Link>
+            )})}
           </Box>
 
             <div>
