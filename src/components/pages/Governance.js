@@ -215,7 +215,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={8} style={{padding: '10px'}}>
                         <h1 style={{fontSize: '2.5em'}}>Get Started in Governance Today</h1>
                         <p className='textWreck'>Join the <span style={{color:'#f00'}}>Discussion on Forums</span></p>
-                        <a href="" style={{padding: '5px', borderBottom: '1px solid #111', color: '#fff'}}>Buy Bank</a>
+                        <a href="#k" style={{padding: '5px', borderBottom: '1px solid #111', color: '#fff'}}>Buy Bank</a>
                     </Grid>
                     <Grid item xs={12} md={4} style={{padding: '10px'}}>
                     <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" style={{maxWidth: '100%'}} />
