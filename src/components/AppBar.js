@@ -96,9 +96,11 @@ export const MainAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <Link to={page.path} style={{textDecoration: 'none', color: 'inherit'}} key={page.name} >
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -123,10 +125,9 @@ export const MainAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end', paddingRight: '25px' } }}>
             {pages.map((page) => {
                 return(
-                <Link to={page.path} style={{textDecoration: 'none'}}>
+                <Link to={page.path} style={{textDecoration: 'none', color: 'inherit'}} key={page.name}>
               <Button
                 className='menuButton'
-                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
