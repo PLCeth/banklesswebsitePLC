@@ -1,6 +1,6 @@
 import { Button, Container, Grid } from '@mui/material'
 import * as React from 'react'
-
+import { Fade, Slide } from 'react-reveal'
 
 export const Listen = (props) => {
 
@@ -9,17 +9,23 @@ export const Listen = (props) => {
             <Container style={{paddingTop: '100px'}}>
                 <Grid container>
                     <Grid item xs={12} md={6} style={{padding: '20px'}}>
+                        <Fade>
                         <h1 >The Podcast Hatchery</h1>
                         <p style={{ lineHeight: '1.5em', fontSize: '1.3em'}}>Incubates audio storytelling projects. The team helps new podcasters find their audience, 
                             build their unique storytelling identity, and explore Web3 through interviews with thought-leaders in the space.</p>
                         <a href="https://open.spotify.com/show/1jLNOoJv77K733rZzL4c6b" target="_blank" rel="noreferrer" className='destyle'><Button color="error" variant="contained">Podcast Hatchery</Button></a>
+                        </Fade>
                     </Grid>
                     <Grid item xs={12} md={6} >
+                        <Slide up>
                         <img src={process.env.PUBLIC_URL + '/assets/media/podcast-hatchery.png'} alt="podcast-hatchery" style={{maxWidth: '100%'}} />
+                        </Slide>
                     </Grid>
 
                     <Grid item xs={12} md={4} style={{lineHeight: '1.5em', color: '#aaa', padding:'20px'}}>
+                        <Fade>
                         <p>Check out these shows produced and hosted by members of BanklessDAO:</p>
+                        </Fade>
                     </Grid>
 
                     <Grid item xs={8} md={8}></Grid>
@@ -27,6 +33,7 @@ export const Listen = (props) => {
                 </Grid>
                 <Grid container style={{justifyContent: 'center'}}>
                     <Grid item xs={12} md={4}  style={{padding: '20px'}}>
+                        <Fade>
                         <div style={{backgroundColor: "#222", paddingBottom: '50px', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}}>
                             <h1 className='centered'>Crypto Sapiens</h1>
                             <div className='centered'>Hosted By <span style={{color: '#f00'}}>Humpty</span></div>
@@ -44,9 +51,11 @@ export const Listen = (props) => {
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assets/media/cryptosapiens.png'} alt="crypto sapiens" 
                             style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
+                        </Fade>
                     </Grid>
 
                     <Grid item xs={12} md={4} style={{padding: '20px'}}>
+                        <Fade>
                         <div style={{backgroundColor: "#222", paddingBottom: '50px', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}}>
                             <h1 className='centered'>Making Bank</h1>
                             <div className='centered' style={{fontWeight: 'bold'}}>Organized by <span style={{color: '#f00'}}>Soundman</span> and hosted by members of the BanklessDAO community</div>
@@ -57,24 +66,30 @@ export const Listen = (props) => {
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assets/media/makingbank.png'} alt="crypto sapiens" 
                             style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
+                        </Fade>
                     </Grid>
 
 
 
                     <Grid item xs={12} md={12}>
+                        <Slide up>
                         <h1 style={{textAlign: 'center', paddingTop: '50px'}}>Coming Soon</h1>
                         <div className='divider'></div>
+                        </Slide>
                     </Grid>
 
                     <Grid item xs={12} md={6} style={{padding: '25px', marginBottom: '20px'}}>
+                        <Fade>
                         <div className="graybox">
                         <h1 style={{padding: '10px', textAlign: 'center'}}>AB INITIO: FROM THE BEGINNING</h1>
                         <div className='centered'>Hosted By <span style={{color: '#f00'}}>ComeBackKid</span> and 
                         <a href="https://twitter.com/lion917_eth" className='destyle' target="_blank" rel="noreferrer"> Lion917</a></div>
                         <p style={{lineHeight: '1.5em'}}>A Legal Guild podcast series with each episode focusing on addressing current DAO and crypto-related legal issues via an interview with a subject matter expert.</p>
                         </div>
+                        </Fade>
                     </Grid> 
                     <Grid item xs={12} md={6} style={{padding: '25px'}}>
+                        <Fade>
                         <div className='graybox'>
                         <h1 style={{padding: '10px', textAlign: 'center'}}>BOUNTY HUNTER</h1>
                         <div className='centered'>Hosted By 
@@ -84,6 +99,7 @@ export const Listen = (props) => {
                         Join serial entrepreneur <a href="https://twitter.com/brandoncnolte" className='destyle' target="_blank" rel="noreferrer" style={{color: '#f00'}}>Brandon Nolte</a> as he interviews community builders, DAO contributors, and the best innovators in Web3. 
                         Follow Bounty Hunter on <a href="https://twitter.com/BountyxHunterx" className='destyle' target="_blank" rel="noreferrer">Twitter.</a></p>
                         </div>
+                        </Fade>
                     </Grid> 
 
       
