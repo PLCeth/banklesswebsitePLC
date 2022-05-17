@@ -8,7 +8,6 @@ import { HomePage } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Listen } from './components/pages/Listen';
 import { Read } from './components/pages/Read';
-
 import { Work } from './components/pages/Work';
 import { Invest } from './components/pages/Invest';
 import { NewMembers } from './components/pages/NewMembers';
@@ -20,7 +19,9 @@ import { Projects } from './components/pages/subpages/Projects';
 import { CommunityCalls } from './components/pages/subpages/CommunityCalls';
 import { Coordination } from './components/pages/subpages/Coordination';
 
+
 function App() {
+
   return (
     <div className='mainColors'>
       <Router>
