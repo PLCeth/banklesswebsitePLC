@@ -36,6 +36,50 @@ export const Read = (props) => {
                     <Fade>
                     <h1>Newsletters</h1>
                     <div className='divider' style={{marginLeft: '0', marginTop: '0'}}></div>
+
+                    { /* Newsletter Box */ }
+                    <Grid container>
+                        <Grid item xs={12} md={4} style={{padding: '20px'}} >
+                            <div style={{backgroundColor: '#111', borderRadius: '20px', padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: '1'}}>
+                            <h1>The Weekly Rollup</h1>
+                            <p className='textWreck'>Weekly summary of everything that happens in bDAO.  It's the place to stay updated with the DAO.</p>
+                            <div>View</div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <div style={{paddingLeft: '20px', paddingRight: '20px', display: 'flex', flexDirection: 'column', flexGrow: '1'}}>
+                            <div className='textWreck' style={{backgroundColor: '#111', borderRadius: '20px', minHeight: '150px', padding: '20px'}}>
+                                <h1>Decentralized Art</h1>
+                                <p className='textWreck'>Weekly Crypto Art and NFT Newsletter</p>
+                                <div>View</div>
+                            </div>
+                            <div style={{backgroundColor: '#111', borderRadius: '20px', minHeight: '140px', marginTop: '10px', padding: '20px'}}>
+                                <h1>State of the DAOs</h1>
+                                <p className='textWreck'>The high-signal-low-noise DAO ecosystem newsletter.</p>
+                                <div>View</div>
+                            </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} md={4} style={{padding: '20px'}}>
+                            <div style={{ backgroundColor: '#111', borderRadius: '20px', padding: '20px', position: 'relative', minHeight: '400px'}}>
+                            <h1>Decentralized Law</h1>
+                            <p className='textWreck'>The premier legal newsletter in the crypto space, publishing cutting-edge legal scholarship 
+                                twice a month.
+                            </p>
+                            <div>View</div>
+                            <img className="hideMobile" src={process.env.PUBLIC_URL + '/assets/media/read_token.png'} alt="mirror" style={{maxWidth: '100%', position: 'absolute', left: '-70px', bottom: '-200px'}} />
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} md={8} style={{marginTop: '20px'}}>
+                            <div style={{backgroundColor: '#111', padding: '20px', borderRadius: '20px'}}>
+                                <h1>Gearing Up</h1>
+                                <p className='textWreck'>Weekly bDAO project and guild highlights newsletter to help members stay up to speed on all internal bDAO updates.</p>
+                            </div>
+                        </Grid>
+                    </Grid>
+
+
+
                     </Fade>
                 </Grid>
 

@@ -11,13 +11,16 @@ export const NewMembers = (props) => {
     const getContent = (slideNum) => {
         if (slideNum === 3) {
             return (
+                <Fade>
                 <div>
                     <h1 style={{textTransform: 'uppercase', fontSize: '1.4em'}}>Get Plugged into a project</h1>
                     <p>Find a guild or project that interests you and begin joining meetings. The best ways to get to know contributors include joining synchronous meetings, introducing yourself in channels, and making a positive impression on the community by delivering on work. Yes, it’s really that easy to start working in bDAO.</p>
                 </div>
+                </Fade>
             )
         } else if (slideNum === 2) {
             return (
+                <Fade>
                 <div>
                     <h1 style={{textTransform: 'uppercase', fontSize: '1.4em'}}>Read, follow, listen, and learn</h1>
                     <p>Subscribe, bookmark, and follow along to receive updates and news from the community:</p>
@@ -34,10 +37,12 @@ export const NewMembers = (props) => {
                         <div className='nmLink'>Mirror</div>
                     </div>
                 </div>
+                </Fade>
             )
         } 
         return (
             /* Slide 1 default */
+            <Fade>
             <div>
                 <h1 style={{textTransform: 'uppercase'}}>Join the server</h1>
                 <p>Join the bDAO Discord server here.  Following a brief verification and onboarding process, you can get 
@@ -46,6 +51,7 @@ export const NewMembers = (props) => {
                     35,000 BANK membership threshold.
                 </p>
             </div>
+            </Fade>
         )
     }
 
