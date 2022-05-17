@@ -21,7 +21,7 @@ export const About = (props) => {
                         <a href="#k" style={{color: '#FFF'}}>RSA</a>
                     </Grid>
 
-                    <Grid item xs={12} md={12}>
+                    <Grid item xs={12} md={12} style={{paddingTop: '30px'}}>
                         { /* Links to subpages */ }
                         <div style={{display: 'flex', flexWrap: 'wrap', textTransform: 'uppercase', justifyContent: 'center'}}>
                             <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
