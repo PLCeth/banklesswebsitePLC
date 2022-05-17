@@ -11,7 +11,7 @@ export const Read = (props) => {
             <h1>Decentralizing media one article at a time</h1>
             <p className='textWreck' style={{maxWidth: '600px'}}>BanklessDAO is building the first decentralized publishing house ever. Our newsletters and articles are translated into a variety of languages to reach a global audience. Find your crypto reading materials right here.</p>
             
-            <img src={process.env.PUBLIC_URL + '/assets/media/readpen.png'} alt="pen" style={{position: 'absolute', top: '0', right: '0'}} className='hideMobile' />
+            <img src={process.env.PUBLIC_URL + '/assets/media/readpen.webp'} alt="pen" style={{position: 'absolute', top: '0', right: '0'}} className='hideMobile' />
             <div className="bgRed"></div>
             </Fade>
 
@@ -19,14 +19,14 @@ export const Read = (props) => {
 
                 <Grid item xs={12} md={3}>
                     <Slide up>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/icon_medium.png'} alt="medium" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/icon_medium.webp'} alt="medium" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
                     <h3>Medium Article</h3>
                     <p className='textWreck' style={{maxWidth: '250px'}}>Crypto and Web3 commentary representing the voice of the DAO.</p>
                     </Slide>
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <Slide up>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/icon_mirror.png'} alt="mirror" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/icon_mirror.webp'} alt="mirror" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
                     <h3>Mirror Article</h3>
                     <p className='textWreck' style={{maxWidth: '250px'}}>BanklessDAO history and season recaps posted publicly.</p>
                     </Slide>
@@ -67,7 +67,7 @@ export const Read = (props) => {
                                 twice a month.
                             </p>
                             <div>View</div>
-                            <img className="hideMobile" src={process.env.PUBLIC_URL + '/assets/media/read_token.png'} alt="mirror" style={{maxWidth: '100%', position: 'absolute', left: '-70px', bottom: '-200px'}} />
+                            <img className="hideMobile" src={process.env.PUBLIC_URL + '/assets/media/read_token.webp'} alt="mirror" style={{maxWidth: '100%', position: 'absolute', left: '-70px', bottom: '-200px'}} />
                             </div>
                         </Grid>
                         <Grid item xs={12} md={8} style={{padding: '20px'}}>
@@ -93,7 +93,7 @@ export const Read = (props) => {
                         </Grid>
                         <Grid item xs={12} md={4} style={{padding: '10px'}}>
                             <div style={{display: 'flex'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/icon_mirror.png'} alt="mirror" style={{padding: '10px', borderRadius: '10px'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/icon_mirror.webp'} alt="mirror" style={{padding: '10px', borderRadius: '10px'}} />
                             <h3 style={{paddingLeft: '10px'}}>Mirror</h3>
                             </div>
                             
@@ -116,23 +116,23 @@ export const Read = (props) => {
 
                     <Grid container style={{textAlign: 'center'}}>
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/bhutan.png'} alt="bhutan" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/bhutan.webp'} alt="bhutan" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/sweden.png'} alt="sweden" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/sweden.webp'} alt="sweden" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/greece.png'} alt="greece" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/greece.webp'} alt="greece" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
 
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/turkey.png'} alt="turkey" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/turkey.webp'} alt="turkey" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/bulgaria.png'} alt="bulgaria" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/bulgaria.webp'} alt="bulgaria" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
                         <Grid item xs={4} md={4}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/japan.png'} alt="japan" style={{padding: '10px', maxWidth: '100%'}} />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/japan.webp'} alt="japan" style={{padding: '10px', maxWidth: '100%'}} />
                         </Grid>
                     </Grid>
                     </Fade>

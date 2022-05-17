@@ -43,7 +43,7 @@ export const HomePage = (props) => {
                     <Grid item xs={12} md={6}>
                         <Fade>
                         <div className="gridBox">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/media.jpg'} alt="Media" className='gridImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/media.webp'} alt="Media" className='gridImage'/>
                             <div className="paddedBox">
                                 <h2 className='subHeader'>Media</h2>
                                 <p style={{padding: '20px', fontSize: '1.2em', color: '#bbb'}}>
@@ -63,7 +63,7 @@ export const HomePage = (props) => {
                     <Grid item xs={12} md={6}>
                         <Fade>
                         <div className="gridBox">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/consulting.jpg'} alt="Consulting" className='gridImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/consulting.webp'} alt="Consulting" className='gridImage'/>
                             <div className="paddedBox">
                                 <h2 className='subHeader'>Consulting</h2>
                                 <p style={{padding: '20px', fontSize: '1.2em', color: '#bbb'}}>
@@ -84,7 +84,7 @@ export const HomePage = (props) => {
                     <Grid item xs={12} md={6}>
                         <Fade>
                         <div className="gridBox">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/dao-tooling.jpg'} alt="DAO Tooling" className='gridImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/dao-tooling.webp'} alt="DAO Tooling" className='gridImage'/>
                             <div className="paddedBox">
                                 <h2 className='subHeader'>DAO Tooling</h2>
                                 <p style={{padding: '20px', fontSize: '1.2em', color: '#bbb'}}>
@@ -106,7 +106,7 @@ export const HomePage = (props) => {
                     <Grid item xs={12} md={6}>
                         <Fade>
                         <div className="gridBox">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/coming-home.jpg'} alt="Coming Home" className='gridImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/media/coming-home.webp'} alt="Coming Home" className='gridImage'/>
                             <div className="paddedBox">
                                 <h2 className='subHeader'>Coming Home</h2>
                                 <p style={{padding: '20px', fontSize: '1.2em', color: '#bbb'}}>
@@ -135,12 +135,12 @@ export const HomePage = (props) => {
             <Grid container>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.png'} alt="Bankless Coin" style={{maxWidth: '300px'}}/>
+                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.webp'} alt="Bankless Coin" style={{maxWidth: '300px'}}/>
                     <h2 style={{paddingTop: '20px'}}>BANK Token</h2>
                 </Grid>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.png'} alt="Ethereum" style={{maxWidth: '200px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.webp'} alt="Ethereum" style={{maxWidth: '200px'}} />
                     <h2 style={{paddingTop: '20px'}}>Ethereum Blockchain</h2>
                 </Grid>
 
@@ -166,12 +166,12 @@ export const HomePage = (props) => {
 
                     <Grid item xs={12} md={3} style={{justifyContent: 'center', display: 'flex', marginTop: '20px'}}>
                         <Slide bottom>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/david-hoffman.jpg'} alt="David Hoffman" className='circledPic' style={{boxShadow: '-18px 0px 35px red'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/david-hoffman.webp'} alt="David Hoffman" className='circledPic' style={{boxShadow: '-18px 0px 35px red'}} />
                         </Slide>
                     </Grid>
                     <Grid item xs={12} md={3} style={{justifyContent: 'center', display: 'flex', marginTop: '20px'}}>
                         <Slide bottom>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.jpg'} alt="Ryan Sean Adams" className='circledPic' style={{boxShadow: '18px 0px 35px red'}}  />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/ryan-sean-adams.webp'} alt="Ryan Sean Adams" className='circledPic' style={{boxShadow: '18px 0px 35px red'}}  />
                         </Slide>
                     </Grid>
                     <Grid item xs={12} md={6} style={{padding: '20px'}}>
@@ -198,32 +198,32 @@ export const HomePage = (props) => {
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
 
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Kouros</h3>
                         </Grid>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3 >Grendel</h3>
                         </Grid>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3 >IcedCool</h3>
                         </Grid>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/chuck.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/chuck.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Chuck</h3>
                         </Grid>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/montgomery.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/montgomery.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Montgomery</h3>
                         </Grid>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/lion917.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/lion917.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Lion917</h3>
                         </Grid>
 
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/links.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/links.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Links</h3>
                         </Grid>
 
@@ -240,31 +240,31 @@ export const HomePage = (props) => {
                     <Fade >
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
                         <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Kouros</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/0xlucas.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/0xlucas.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3 >0xLucas</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/aboveaveragejoe.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/aboveaveragejoe.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3 >AboveAverageJoe</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>Grendel</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/frogmonkee.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/frogmonkee.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>FrogMonkee</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>IcedCool</h3>
                         </Grid>
                         <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/redvan.jpg'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                            <img src={process.env.PUBLIC_URL + '/assets/media/people/redvan.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
                             <h3>RedVan</h3>
                         </Grid>
                     </Grid>

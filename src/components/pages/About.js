@@ -11,7 +11,7 @@ export const About = (props) => {
                 <Fade>
                 <Grid container>
                     <Grid item xs={12} md={6} style={{minHeight: '350px'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/instructor.png'} alt="Instructor" style={{maxWidth: '100%'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/instructor.webp'} alt="Instructor" style={{maxWidth: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column'}}>
                         <h1>WANT ALPHA?</h1>
@@ -29,11 +29,11 @@ export const About = (props) => {
                         and permissionless money systems. Bankless is the movement educating the world on how to do it.</p>
                     </Grid>
                     <Grid item xs={12} md={4} style={{textAlign: 'center'}} order={{xs: 1, md: 2}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/bankless-movement.png'} alt="bankless movement" style={{borderRadius: '20px'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/bankless-movement.webp'} alt="bankless movement" style={{borderRadius: '20px'}} />
                     </Grid>
 
                     <Grid item xs={12} md={4} style={{textAlign: 'center', paddingTop: '50px'}} order={{xs: 3, md: 3}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/bankless-dao.png'} alt="bankless movement" style={{borderRadius: '20px'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/bankless-dao.webp'} alt="bankless movement" style={{borderRadius: '20px'}} />
                     </Grid>
                     <Grid item xs={12} md={8} style={{padding: '20px', paddingTop: '50px'}} order={{xs: 4, md: 4}}>
                         <h3 style={{textAlign: 'left'}}>BanklessDAO is the homebase</h3>

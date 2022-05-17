@@ -10,7 +10,7 @@ export const Invest = (props) => {
                 <Grid container>
                     <Grid item xs={12} md={3}>
                         <Fade>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/banktoken.png'} alt="Bank Token" style={{maxWidth: '100%'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/banktoken.webp'} alt="Bank Token" style={{maxWidth: '100%'}} />
                         </Fade>
                     </Grid>
                     <Grid item xs={12} md={9}>
@@ -51,7 +51,7 @@ export const Invest = (props) => {
 
                     <Grid item xs={12} md={3} style={{textAlign: 'center'}}>
                         <Slide up>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/bedindex.png'} alt="Bank Token" style={{maxWidth: '100%'}} className="hideMobile" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/bedindex.webp'} alt="Bank Token" style={{maxWidth: '100%'}} className="hideMobile" />
                         </Slide>
                     </Grid>
                 </Grid>
@@ -86,7 +86,7 @@ export const Invest = (props) => {
                 <Grid container>
                     <Grid item xs={12} md={5}>
                         <Fade>
-                     <img src={process.env.PUBLIC_URL + '/assets/media/daopunks.png'} alt="DAO Punks" style={{maxWidth: '100%'}} />
+                     <img src={process.env.PUBLIC_URL + '/assets/media/daopunks.webp'} alt="DAO Punks" style={{maxWidth: '100%'}} />
                      </Fade>
                     </Grid>
                     <Grid item xs={12} md={7} style={{padding: '25px'}}>

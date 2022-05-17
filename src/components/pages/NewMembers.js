@@ -87,7 +87,7 @@ export const NewMembers = (props) => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Slide up>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/members.png'} style={{maxWidth: '100%'}} alt="Members" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/members.webp'} style={{maxWidth: '100%'}} alt="Members" />
                         </Slide>
                     </Grid>
 
@@ -117,7 +117,7 @@ export const NewMembers = (props) => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Fade>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" style={{maxWidth: '100%'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.webp'} alt="BANK Coin" style={{maxWidth: '100%'}} />
                         </Fade>
                     </Grid>
                 </Grid>

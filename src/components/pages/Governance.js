@@ -41,7 +41,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <Slide up>
                         <div style={{display: 'flex', alignItems: 'center'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/support.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/support.webp'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>GAIN SUPPORT</h3>     
                         </div>
                         <p className='textWreck'>Pitch your idea to fellow contributors so you can find a group that aligns with your goals and wants to see your idea come to life. Typically, this involves hours spent on multiple Discord meetings and lots of discussions in channels. You are encouraged to have these conversations in public channels so that other like-minded individuals can get involved.</p>               
@@ -50,7 +50,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <Slide up>
                         <div style={{display: 'flex', alignItems: 'center'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/draft.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/draft.webp'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>DRAFT A PROPOSAL</h3>        
                         </div>
                         <p className='textWreck'>Write a forum post following this template. The bDAO community will vote on your proposal and leave feedback on our forum. If your proposal is particularly complex or technical, share educational materials so voters can better understand it and make an informed decision.</p>            
@@ -60,7 +60,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <Slide up>
                         <div style={{display: 'flex', alignItems: 'center'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/workshop.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/workshop.webp'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>WORKSHOP THE PROPOSAL</h3>        
                         </div>
                         <p className='textWreck'>The majority of proposals don’t pass muster in their original form. This is our iteration process in action. Keep an eye out for the comments and feedback from our contributors on your proposal: they are invaluable to making it a success. Incorporate the feedback you get and prepare a second or third draft if necessary.</p>            
@@ -70,7 +70,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={6}  style={{padding: '20px'}}>
                         <Slide up>
                         <div style={{display: 'flex', alignItems: 'center'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/vote.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/vote.webp'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>VOTE</h3>        
                         </div>
                         <p className='textWreck'>If your proposal is up for at least seven days, receives at least 30 votes, and has a majority in favor, you’re approved to begin work! If you don’t require funding from the Grants Committee you can begin work immediately.</p>            
@@ -80,7 +80,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={12}  style={{padding: '20px'}}>
                         <Slide up>
                         <div style={{display: 'flex', alignItems: 'center'}}>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/funding.png'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/funding.webp'} style={{height: '50px', width:"50px", marginRight: '10px'}} alt="support" />
                         <h3>ACQUIRE FUNDING</h3>        
                         </div>
                         <p className='textWreck'>If your proposal is up for at least seven days, receives at least 30 votes, and has a majority in favor, you’re approved to begin work! If you don’t require funding from the Grants Committee you can begin work immediately.</p>            
@@ -244,7 +244,7 @@ export const Governance = (props) => {
                     </Grid>
                     <Grid item xs={12} md={4} style={{padding: '10px'}}>
                         <Fade>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.png'} alt="BANK Coin" style={{maxWidth: '100%'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/some3d.webp'} alt="BANK Coin" style={{maxWidth: '100%'}} />
                         </Fade>
                     </Grid>
 

@@ -18,7 +18,7 @@ export const Listen = (props) => {
                     </Grid>
                     <Grid item xs={12} md={6} >
                         <Slide up>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/podcast-hatchery.png'} alt="podcast-hatchery" style={{maxWidth: '100%'}} />
+                        <img src={process.env.PUBLIC_URL + '/assets/media/podcast-hatchery.webp'} alt="podcast-hatchery" style={{maxWidth: '100%'}} />
                         </Slide>
                     </Grid>
 
@@ -49,7 +49,7 @@ export const Listen = (props) => {
                                 <a href="https://www.instagram.com/cryptosapiensofficial/" target="_blank" rel="noreferrer" className='destyle' style={{color: '#f00'}}> Instagram</a></li>
                             </ul>
                         </div>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/cryptosapiens.png'} alt="crypto sapiens" 
+                        <img src={process.env.PUBLIC_URL + '/assets/media/cryptosapiens.webp'} alt="crypto sapiens" 
                             style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
                         </Fade>
                     </Grid>
@@ -64,7 +64,7 @@ export const Listen = (props) => {
                                 <li>Listen on <a href="https://www.podbean.com/podcast-detail/pnwdu-202cc2/Making-%24BANK-Podcast" target="_blank" rel="noreferrer" className='destyle' style={{color: '#f00'}}> BanklessDAO’s Podbean</a></li>
                             </ul>
                         </div>
-                        <img src={process.env.PUBLIC_URL + '/assets/media/makingbank.png'} alt="crypto sapiens" 
+                        <img src={process.env.PUBLIC_URL + '/assets/media/makingbank.webp'} alt="crypto sapiens" 
                             style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
                         </Fade>
                     </Grid>
