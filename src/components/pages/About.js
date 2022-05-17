@@ -2,6 +2,8 @@ import { Container, Grid } from '@mui/material'
 import * as React from 'react'
 import { Fade } from 'react-reveal'
 import { Circles } from '../Circles'
+import { Link } from 'react-router-dom'
+
 
 export const About = (props) => {
 
@@ -17,6 +19,34 @@ export const About = (props) => {
                         <h1>WANT ALPHA?</h1>
                         <h2>Join BanklessDAO</h2>
                         <a href="#k" style={{color: '#FFF'}}>RSA</a>
+                    </Grid>
+
+                    <Grid item xs={12} md={12}>
+                        { /* Links to subpages */ }
+                        <div style={{display: 'flex', flexWrap: 'wrap', textTransform: 'uppercase', justifyContent: 'center'}}>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/governance" className='destyle'><h2>Governance</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/guilds" className='destyle'><h2>Guilds</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/projects" className='destyle'><h2>Projects</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/coordination" className='destyle'><h2>Coordination</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/community" className='destyle'><h2>Community Calls</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/portal" className='destyle'><h2>Portal Nodes</h2></Link>
+                            </div>
+                            <div style={{padding: '10px', paddingRight: '20px', paddingTop: '0px'}}>
+                                <Link to="/media" className='destyle'><h2>Media Kit</h2></Link>
+                            </div>
+                        </div>
+                        <div className="elip"></div>
                     </Grid>
                 </Grid>
                 </Fade>

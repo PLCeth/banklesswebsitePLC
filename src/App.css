@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .elip {
-  background: radial-gradient(ellipse at top center, rgb(82, 0, 0), #000, 80%, #000 100%);
+  background: radial-gradient(ellipse at top center, rgb(82, 0, 0) 0%, rgb(82, 0, 0) 40%, transparent, 80%, transparent 100%);
   height: 5px;
   margin-bottom: 20px;
 }
