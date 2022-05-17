@@ -1,8 +1,106 @@
-import { Container, Grid } from '@mui/material'
+import { Container, Grid, Box, MobileStepper, Button } from '@mui/material'
 import * as React from 'react'
 import { Fade } from 'react-reveal'
 import { Circles } from '../Circles'
 import { Link } from 'react-router-dom'
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay } from 'react-swipeable-views-utils';
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+const images = [
+    {
+      label: 'Education',
+      imgPath:
+        process.env.PUBLIC_URL + '/assets/media/our-values-education.png',
+    },
+    {
+      label: 'Culture',
+      imgPath:
+        process.env.PUBLIC_URL + '/assets/media/our-values-culture.png',
+    },
+    {
+      label: 'Decentralized Governance',
+      imgPath:
+        process.env.PUBLIC_URL + '/assets/media/our-values-decentralized-governance.png',
+    },
+  ];
+
+export const Stepper = (props) => {
+    const [activeStep, setActiveStep] = React.useState(0);
+    const maxSteps = images.length;
+  
+    const handleNext = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    };
+  
+    const handleBack = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
+  
+    const handleStepChange = (step) => {
+      setActiveStep(step);
+    };
+
+    return (
+        <Box>
+    <AutoPlaySwipeableViews
+        index={activeStep}
+        onChangeIndex={handleStepChange}
+        enableMouseEvents
+        
+      >
+        {images.map((step, index) => (
+          <div key={step.label}>
+            <h2 style={{position: 'absolute', bottom: '0'}}>{ step.label}</h2>
+            {Math.abs(activeStep - index) <= 2 ? (
+              <div style={{position: 'relative'}}>
+              <Box
+                component="img"
+                sx={{
+                  height: 300,
+                  display: 'block',
+                  overflow: 'hidden',
+                  maxWidth: '500px',
+                  marginLeft: 'auto', marginRight: 'auto',
+                  width: '100%',
+                  textAlign: 'center',
+                }}
+                src={step.imgPath}
+                alt={step.label}
+              />
+            </div>
+            ) : null}
+          </div>
+        ))}
+      </AutoPlaySwipeableViews>
+      <MobileStepper
+        steps={maxSteps}
+        position="static"
+        activeStep={activeStep}
+        nextButton={
+          <Button
+            size="small"
+            onClick={handleNext}
+            disabled={activeStep === maxSteps - 1}
+            style={{color: '#f00'}}
+          >
+            Next
+              <KeyboardArrowRight />
+          </Button>
+        }
+        backButton={
+          <Button size="small" onClick={handleBack} disabled={activeStep === 0} style={{color: '#f00'}}>
+              <KeyboardArrowLeft />
+            Back
+          </Button>
+        }
+      />
+      </Box>
+    )
+}
 
 
 export const About = (props) => {
@@ -91,16 +189,27 @@ export const About = (props) => {
                 <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
                     <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>OUR VISION IS TO MAKE FINANCIAL INDEPENDENCE, DECENTRALIZED WORK, AND CREATIVE FREEDOM ACCESSIBLE TO ALL</h1>
                     <div className='divider'></div>
-                    <h3 style={{color: '#ccc', lineHeight: '1.5em', textAlign: 'center'}}>
+                    <h3 className="textWreck centered">
                     We work to build a world where anyone with an internet connection has access to the tools needed to achieve financial independence. We want everyone to be able to open a computer, find a DAO, start working, 
                     and get paid. We want to enable visionaries to unlock their true creative freedom with the power of Web3.</h3>
                 </Grid>
             </Container>
 
-            <Container>
-            <div style={{padding: '20px', minHeight: '200px'}}>
-                <h2 style={{textTransform: 'uppercase'}}>Our Values</h2>
-            </div>
+            <Container style={{paddingTop: '30px', paddingBottom: '30px'}}>
+                <Grid container>
+                
+                    <Grid item xs={12} md={12}>
+                    <div style={{padding: '20px', minHeight: '200px'}}>
+                        <h2 style={{textTransform: 'uppercase'}}>Our Values</h2>
+                    </div>
+                    </Grid>
+                    <Grid item xs={12} md={12}>
+                        { /* Slides here */ }
+                        <Stepper />
+
+                    </Grid>
+                </Grid>
+
             </Container>
 
             <Container>
