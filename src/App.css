@@ -350,3 +350,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff2 !important;
   margin-right: 20px !important;
 }
+
+.ccformatBG {
+  background-color: rgb(32, 0, 0);
+  padding: 20px;
+  border-radius: 20px;;
+}
