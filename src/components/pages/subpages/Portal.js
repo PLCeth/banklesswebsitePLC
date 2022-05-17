@@ -16,7 +16,7 @@ export const Portal = (props) => {
     
     return (
         <div>
-            <Grid container style={{justifyContent: 'center'}}>
+            <Grid container style={{justifyContent: 'center', padding: '20px'}}>
                 <Grid item xs={12} md={6}>
                     <h1 style={{textAlign: 'center'}}>Portal To Nodes</h1>
                     <div className='divider' style={{maxWidth: '500px', marginTop: '0'}}></div>
