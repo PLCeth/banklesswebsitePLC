@@ -263,3 +263,10 @@ h1, h2, h3, h4, h5, h6 {
 .redText {
   color: #f00;
 }
+
+.bar {
+  height: 12px;
+  background-color: #f00;
+  width: 50px;
+  margin-right: 10px;
+}

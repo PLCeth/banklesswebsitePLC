@@ -46,9 +46,15 @@ export const Invest = (props) => {
                     </Grid>
                 </Grid>
 
-                <Grid container style={{justifyContent: 'center', paddingBottom: '100px'}}>
+                <Grid container style={{justifyContent: 'center', paddingBottom: '100px', paddingTop: '70px'}}>
                     <Grid item xs={12} md={8}>
                         <h1>GMI INDEX</h1>
+                        <div style={{display: 'flex'}}>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                        </div>
+
                         <h1 className='redText'>Are you GMI?</h1>
                         <div>
                         <p>The Bankless DeFi Innovation Index, called the GMI Index for the rally cry 
@@ -61,6 +67,52 @@ export const Invest = (props) => {
                         <a href="https://app.indexcoop.com/gmi" target="_blank" rel="noreferrer" className='destyle'>
                         <Button color="error" variant="contained">Invest in GMI Index</Button>
                         </a>
+                    </Grid>
+                </Grid>
+
+
+                <Grid container>
+                    <Grid item xs={12} md={5}>
+                     <img src={process.env.PUBLIC_URL + '/assets/media/daopunks.png'} alt="DAO Punks" style={{maxWidth: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={7} style={{padding: '25px'}}>
+                        <h1>DAO Punks</h1>
+                        <p>DAOpunks launched in 2021 with the mission of helping to free all humans from the soul-sucking drudgery of default world work. 
+                            They do that work through providing grants to those who seek to leave the CORPrat life for the meaningful work found in DAOs.</p><p>
+                            Holders of a DAOpunk NFT enjoy access to gated channels, but the community is open to anyone with an interest in DAOs. 
+                            In addition to grants, the DAOpunks have a newsletter, podcast, and merch arm, and are always spinning new ideas into actionable 
+                            content. DAOpunks is at the edge of DAO governance, and is pushing the boundaries of where technology meets on-chain voting 
+                            and automatic treasury triggers.</p>
+                            <a href="https://opensea.io/collection/daopunksnft" target="_blank" rel="noreferrer" className='destyle'>
+                            <Button color="error" variant="contained">Invest in DAO Punks</Button>
+                            </a>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{paddingTop: '60px'}}>
+                        <h1>Chippi</h1>
+                        <p className='borderBox' style={{padding: '15px', maxWidth: '400px'}}>
+                        Chippi are hand-drawn 1-of-1s from BanklessDAO contributor Perchy. These profile pictures (PFPs) are members of the Chippiverse, 
+                        playing a role in “The Future is DAO” storyline. Chippi inhabit the Bankless Nation, a series of art pieces available as NFTs.
+
+                        <div style={{textAlign: 'center', paddingTop: '30px'}}>
+                        <a href="https://opensea.io/collection/chippi" target="_blank" rel="noreferrer" className='destyle'>
+                            <Button color="error" variant="contained">Invest in Chippi</Button>
+                        </a>
+                        </div>
+                        </p>
+                    </Grid>
+
+                    <Grid item xs={12} md={6} style={{paddingTop: '60px', paddingBottom: "100px"}}>
+                        <h1>BanklessDAO Weekly NFT Showcase</h1>
+                        <p className='borderBox' style={{padding: '15px', maxWidth: '400px'}}>
+                        BanklessDAO is embedded in the creative space of NFTs and a champion for artists paving the way in digital art forms. Weekly features can be found on BanklessDAO's Rarible page or the Weekly Rollup newsletter.
+
+                        <div style={{textAlign: 'center', paddingTop: '30px'}}>
+                        <a href="https://rarible.com/banklessdao/sale" target="_blank" rel="noreferrer" className='destyle'>
+                            <Button color="error" variant="contained">Invest in NFT's</Button>
+                        </a>
+                        </div>
+                        </p>
                     </Grid>
                 </Grid>
             </Container>
