@@ -22,12 +22,40 @@ export const Listen = (props) => {
                         <p>Check out these shows produced and hosted by members of BanklessDAO:</p>
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={8} md={8}></Grid>
+
+                </Grid>
+                <Grid container style={{justifyContent: 'center'}}>
+                    <Grid item xs={12} md={4}  style={{padding: '20px'}}>
+                        <div style={{backgroundColor: "#222", paddingBottom: '50px', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}}>
+                            <h1 className='centered'>Crypto Sapiens</h1>
+                            <div className='centered'>Hosted By <span style={{color: '#f00'}}>Humpty</span></div>
+                            <p className='textWreck'>Crypto Sapiens hosts discussions with innovative Web3 builders to help everyone learn about decentralized money systems including Ethereum, Bitcoin, and DeFi. It empowers people with information to better understand the complex crypto ecosystem and go from crypto curious to crypto natives.</p>
+                            <ul>
+                                <li>Listen on Spotify and Apple Podcasts</li>
+                                <li>Sponsor the Show</li>
+                                <li>Follow on Twitter and Instagram</li>
+                            </ul>
+                        </div>
+                        <img src={process.env.PUBLIC_URL + '/assets/media/cryptosapiens.png'} alt="crypto sapiens" 
+                            style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
-
+                    <Grid item xs={12} md={4} style={{padding: '20px'}}>
+                        <div style={{backgroundColor: "#222", paddingBottom: '50px', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}}>
+                            <h1 className='centered'>Making Bank</h1>
+                            <div className='centered' style={{fontWeight: 'bold'}}>Organized by <span style={{color: '#f00'}}>Soundman</span> and hosted by members of the BanklessDAO community</div>
+                            <p className='textWreck'>This show is focused primarily on highlighting various BanklessDAO members. Soundman helps give bDAO contributors a voice beyond their avatar by getting to know them on a more personal level and what they are doing in the Web3 space as a whole.</p>
+                            <ul style={{paddingBottom: '35px'}}>
+                                <li>Listen on BanklessDAO’s Podbean</li>
+                            </ul>
+                        </div>
+                        <img src={process.env.PUBLIC_URL + '/assets/media/makingbank.png'} alt="crypto sapiens" 
+                            style={{maxWidth: '100%', borderBottomLeftRadius: '50%', backgroundColor: '#222', borderBottomRightRadius: '50%'}} />
                     </Grid>
+
+
+
                     <Grid item xs={12} md={12}>
                         <h1 style={{textAlign: 'center', paddingTop: '50px'}}>Coming Soon</h1>
                         <div className='divider'></div>
