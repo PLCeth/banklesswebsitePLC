@@ -54,7 +54,7 @@ export const Stepper = (props) => {
       >
         {images.map((step, index) => (
           <div key={step.label}>
-            <h2 style={{position: 'absolute', bottom: '0'}}>{ step.label}</h2>
+            <h2 >{ step.label}</h2>
             {Math.abs(activeStep - index) <= 2 ? (
               <div style={{position: 'relative'}}>
               <Box
