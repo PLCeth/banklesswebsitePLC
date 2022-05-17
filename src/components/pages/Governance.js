@@ -4,7 +4,15 @@ import { Fade, Slide } from 'react-reveal'
 
 
 export const Governance = (props) => {
-
+    React.useEffect(() => {
+        // scroll to stop
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }, [])
+    
     return (
         <div style={{minHeight: '100vh'}}>
             <Container>

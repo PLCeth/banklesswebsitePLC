@@ -3,7 +3,15 @@ import * as React from 'react'
 
 
 export const Media = (props) => {
-
+    React.useEffect(() => {
+        // scroll to stop
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }, [])
+    
 
     return (
         <div>
