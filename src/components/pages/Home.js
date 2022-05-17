@@ -23,7 +23,7 @@ export const HomePage = (props) => {
                 </Grid>
             </Container>
 
-            <video autoPlay loop muted id="background-video" playsinline>
+            <video autoPlay loop muted id="background-video" playsInline>
                 <source src={process.env.PUBLIC_URL + '/assets/media/DAOhandLogo.mp4'} type="video/mp4" />
             </video>
             </Fade>
