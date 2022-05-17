@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .readBg {
   z-index: -1;
-  background: radial-gradient(ellipse at center center, rgb(82, 0, 0) 20%, transparent 60%, transparent 100%);
+  background: radial-gradient(ellipse at center center, rgba(67, 0, 70, 0.4) 10%, rgba(82, 0, 0, 0.7) 20%, transparent 60%);
   min-height: 500px;
   width: 100%;
   position: absolute;
