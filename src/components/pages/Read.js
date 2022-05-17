@@ -40,7 +40,7 @@ export const Read = (props) => {
                     { /* Newsletter Box */ }
                     <Grid container>
                         <Grid item xs={12} md={4} style={{padding: '20px'}} >
-                            <div style={{backgroundColor: '#111', borderRadius: '20px', padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: '1'}}>
+                            <div style={{backgroundColor: '#111', borderRadius: '20px', padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: '1', minHeight: '380px'}} className='mobileAdj'>
                             <h1>The Weekly Rollup</h1>
                             <p className='textWreck'>Weekly summary of everything that happens in bDAO.  It's the place to stay updated with the DAO.</p>
                             <div>View</div>
@@ -61,7 +61,7 @@ export const Read = (props) => {
                             </div>
                         </Grid>
                         <Grid item xs={12} md={4} style={{padding: '20px'}}>
-                            <div style={{ backgroundColor: '#111', borderRadius: '20px', padding: '20px', position: 'relative', minHeight: '400px'}}>
+                            <div style={{ backgroundColor: '#111', borderRadius: '20px', padding: '20px', position: 'relative', minHeight: '380px'}} className='mobileAdj'>
                             <h1>Decentralized Law</h1>
                             <p className='textWreck'>The premier legal newsletter in the crypto space, publishing cutting-edge legal scholarship 
                                 twice a month.
@@ -74,6 +74,7 @@ export const Read = (props) => {
                             <div style={{backgroundColor: '#111', padding: '20px', borderRadius: '20px'}}>
                                 <h1>Gearing Up</h1>
                                 <p className='textWreck'>Weekly bDAO project and guild highlights newsletter to help members stay up to speed on all internal bDAO updates.</p>
+                                <div>View</div>
                             </div>
                         </Grid>
                     </Grid>
