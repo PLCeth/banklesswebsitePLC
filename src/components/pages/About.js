@@ -60,7 +60,7 @@ export const Stepper = (props) => {
               <Box
                 component="img"
                 sx={{
-                  height: 300,
+                  height: 250,
                   display: 'block',
                   overflow: 'hidden',
                   maxWidth: '500px',
