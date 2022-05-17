@@ -1,8 +1,69 @@
 import { Container, Grid, Button } from '@mui/material'
 import * as React from 'react'
 import { Fade, Slide } from 'react-reveal'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export const NewMembers = (props) => {
+    const [ currentSlide, setSlide ] = React.useState(1)
+    const [ slideContent, setContent ] = React.useState([])
+
+    const getContent = (slideNum) => {
+        if (slideNum === 3) {
+            return (
+                <div>
+                    <h1 style={{textTransform: 'uppercase', fontSize: '1.4em'}}>Get Plugged into a project</h1>
+                    <p>Find a guild or project that interests you and begin joining meetings. The best ways to get to know contributors include joining synchronous meetings, introducing yourself in channels, and making a positive impression on the community by delivering on work. Yes, it’s really that easy to start working in bDAO.</p>
+                </div>
+            )
+        } else if (slideNum === 2) {
+            return (
+                <div>
+                    <h1 style={{textTransform: 'uppercase', fontSize: '1.4em'}}>Read, follow, listen, and learn</h1>
+                    <p>Subscribe, bookmark, and follow along to receive updates and news from the community:</p>
+                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <div className='nmLink'>The Weekly Rollup</div>
+                        <div className='nmLink'>Gearing Up</div>
+                        <div className='nmLink'>Decentralized Law</div>
+                        <div className='nmLink'>Decentralized Art</div>
+                        <div className='nmLink'>State of DAOs</div>
+                        <div className='nmLink'>Crypto Sapiens</div>
+                        <div className='nmLink'>Twitter</div>
+                        <div className='nmLink'>Instagram</div>
+                        <div className='nmLink'>Medium</div>
+                        <div className='nmLink'>Mirror</div>
+                    </div>
+                </div>
+            )
+        } 
+        return (
+            /* Slide 1 default */
+            <div>
+                <h1 style={{textTransform: 'uppercase'}}>Join the server</h1>
+                <p>Find a guild or project that interests you and begin joining meetings. The best ways to get to know contributors include joining synchronous meetings, introducing yourself in channels, and making a positive impression on the community by delivering on work. Yes, it’s really that easy to start working in bDAO.</p>
+            </div>
+        )
+    }
+
+    React.useEffect(() => {
+        // Set content
+        setContent(getContent(currentSlide))
+    }, [currentSlide])
+
+    
+    const downSlide = () => {
+        if (currentSlide > 1) {
+            let newSlide = currentSlide - 1
+            setSlide(newSlide)
+        }
+    }
+
+    const upSlide = () => {
+        if (currentSlide < 3) {
+            let newSlide = currentSlide + 1
+            setSlide(newSlide)
+        }
+    }
 
     return (
         <div style={{minHeight: '100vh'}}>
@@ -24,7 +85,17 @@ export const NewMembers = (props) => {
                         <Fade>
                         <h1 style={{textAlign: 'center'}}>How to join BanklessDAO</h1>
                         <div className='divider'></div>
-                        <div style={{minHeight: '500px'}}></div>
+                        <div style={{minHeight: '500px'}}>
+                            <Grid container style={{justifyContent: 'center', paddingLeft: '20px', paddingRight: '20px', paddingBottom: '70px'}}>
+                                <Grid item xs={12} md={3} style={{position: 'relative', backgroundColor: '#fff2', minHeight: '500px', borderRadius: '20px', borderLeft: '1px solid #fff7', borderRight: '1px solid #fff7'}}>
+                                    <div className='newMemberSlide'>{ currentSlide }</div>
+                                    <div className="newMemberLeft" onClick={() => downSlide()}><ArrowBackIcon /></div>
+                                    <div className="newMemberRight" onClick={() =>upSlide()}><ArrowForwardIcon /></div>
+                                    <div className="slideContent">{ slideContent }</div>
+                                </Grid>
+                            </Grid>
+
+                        </div>
                         </Fade>
                     </Grid>
 

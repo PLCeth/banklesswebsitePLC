@@ -270,3 +270,59 @@ h1, h2, h3, h4, h5, h6 {
   width: 50px;
   margin-right: 10px;
 }
+
+/* Buttons new members */
+
+.newMemberLeft {
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newMemberRight {
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newMemberSlide {
+  background-color: #f00;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;;
+}
+
+.slideContent {
+  padding-top: 75px;;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nmLink {
+  padding: 5px;
+  color: #f00;
+  font-size: 0.8em;
+}
