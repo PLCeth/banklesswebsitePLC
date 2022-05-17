@@ -2,7 +2,7 @@ import { Container, Grid, Tabs, Typography, Tab, Box } from '@mui/material'
 import * as React from 'react'
 import { Fade } from 'react-reveal';
 import { ContentSlider } from '../ContentSlider';
-import { slidesOne, slidesTwo } from '../workSlides';
+import { slidesOne, slidesTwo, slidesThree, slidesFour } from '../workSlides';
 
 export const Work = (props) => {
     const [valueThree, setValueTabThree] = React.useState(1);
@@ -52,9 +52,6 @@ export const Work = (props) => {
                     <Grid item xs={12} md={12}>
                         <ContentSlider slides={slidesOne} />
                     </Grid>
-
-
-
                 </Grid>
 
                 <Grid container>
@@ -73,51 +70,17 @@ export const Work = (props) => {
                         <p style={{textAlign: 'center'}}>Tell your story and reach a new audience</p>
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueThree} onChange={handleChangeThree} aria-label="basic tabs example">
-                            <Tab label="Custom Articles" {...a11yProps(0)}  className="fontTab"/>
-                            <Tab label="DAOS Newsletter" {...a11yProps(1)}  className="fontTab"/>
-                            <Tab label="Custom Designs" {...a11yProps(2)}  className="fontTab"/>
-                            <Tab label="Audio/Visual Services" {...a11yProps(3)}  className="fontTab"/>
-                            </Tabs>
-                        </Box>
-                        <TabPanel value={valueThree} index={0}>
-                            <div style={{minHeight: '200px'}}>Custom Articles</div>
-                        </TabPanel>
-                        <TabPanel value={valueThree} index={1}>
-                            <div style={{minHeight: '200px'}}>State of the DAOS Newsletter feature</div>
-                        </TabPanel>
-                        <TabPanel value={valueThree} index={2}>
-                            <div style={{minHeight: '200px'}}>Custom Designs</div>
-                        </TabPanel>
-                        <TabPanel value={valueThree} index={3}>
-                            <div style={{minHeight: '200px'}}>Audio/Visual Services</div>
-                        </TabPanel>
+                        <ContentSlider slides={slidesThree} />
                     </Grid>
                 </Grid>
 
-                <Grid container>
+                <Grid container style={{paddingBottom: '150px'}}> 
                     <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
                         <h1 style={{textAlign: 'center'}}>Sponsorships and Marketing</h1>
                         <p style={{textAlign: 'center'}}>Scale your presence in Web3</p>
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueFour} onChange={handleChangeFour} aria-label="basic tabs example">
-                            <Tab label="Newsletter Sponsorships" {...a11yProps(0)} className="fontTab" />
-                            <Tab label="Podcast Sponsorships" {...a11yProps(1)} className="fontTab" />
-                            <Tab label="Marketing Services" {...a11yProps(2)} className="fontTab" />
-                            </Tabs>
-                        </Box>
-                        <TabPanel value={valueFour} index={0}>
-                            <div style={{minHeight: '200px'}}>Newsletter Sponsorships</div>
-                        </TabPanel>
-                        <TabPanel value={valueFour} index={1}>
-                            <div style={{minHeight: '200px'}}>Podcast Sponsorships</div>
-                        </TabPanel>
-                        <TabPanel value={valueFour} index={2}>
-                            <div style={{minHeight: '200px'}}>Marketing Services</div>
-                        </TabPanel>
+                        <ContentSlider slides={slidesFour} />
                     </Grid>
                 </Grid>
             </Container>
