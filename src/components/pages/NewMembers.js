@@ -40,7 +40,11 @@ export const NewMembers = (props) => {
             /* Slide 1 default */
             <div>
                 <h1 style={{textTransform: 'uppercase'}}>Join the server</h1>
-                <p>Find a guild or project that interests you and begin joining meetings. The best ways to get to know contributors include joining synchronous meetings, introducing yourself in channels, and making a positive impression on the community by delivering on work. Yes, it’s really that easy to start working in bDAO.</p>
+                <p>Join the bDAO Discord server here.  Following a brief verification and onboarding process, you can get 
+                    a free guest pass from a Level 2 contributor, which will allow you to explore the server.  Your guest pass 
+                    expires in 15 days, but you can always reach out to an L2 to renew it while your earn your way to the 
+                    35,000 BANK membership threshold.
+                </p>
             </div>
         )
     }
