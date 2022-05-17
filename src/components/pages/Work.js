@@ -1,23 +1,13 @@
-import { Container, Grid, Tabs, Typography, Button, Tab, Box } from '@mui/material'
+import { Container, Grid, Tabs, Typography, Tab, Box } from '@mui/material'
 import * as React from 'react'
 import { Fade } from 'react-reveal';
-import { ContentSlider, Slider } from '../ContentSlider';
+import { ContentSlider } from '../ContentSlider';
 import { slidesOne, slidesTwo } from '../workSlides';
 
 export const Work = (props) => {
-    const [valueOne, setValueTabOne] = React.useState(1);
-    const [valueTwo, setValueTabTwo] = React.useState(1);
     const [valueThree, setValueTabThree] = React.useState(1);
     const [valueFour, setValueTabFour] = React.useState(1);
 
-
-    const handleChangeOne  = (event, newValue) => {
-        setValueTabOne(newValue);
-    };
-
-    const handleChangeTwo  = (event, newValue) => {
-        setValueTabTwo(newValue);
-    };
 
     const handleChangeThree  = (event, newValue) => {
         setValueTabThree(newValue);
