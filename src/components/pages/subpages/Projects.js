@@ -14,7 +14,7 @@ export const Projects = (props) => {
     
 
     return (
-        <div>
+        <div style={{padding: '20px'}}>
             <Grid container style={{justifyContent: 'center'}}>
                 <Grid item xs={12} md={6}>
                     <h1 style={{textAlign: 'center'}}>Projects</h1>
@@ -24,6 +24,7 @@ export const Projects = (props) => {
                         movement.  From consulatancy services to bot integrations to newsletters, we 
                         have multiple ongoing projects and more coming on the docket.  Here are our current projects:</p> 
                 </Grid>
+                
                 <Grid item xs={12} md={12} style={{minHeight: '500px'}} >
                 </Grid>
             </Grid>
