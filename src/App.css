@@ -330,3 +330,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #f00;
   font-size: 0.8em;
 }
+
+.readBg {
+  z-index: -1;
+  background: radial-gradient(ellipse at center center, rgb(82, 0, 0) 20%, transparent 60%, transparent 100%);
+  min-height: 500px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

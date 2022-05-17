@@ -38,7 +38,8 @@ export const Read = (props) => {
                     <div className='divider' style={{marginLeft: '0', marginTop: '0'}}></div>
 
                     { /* Newsletter Box */ }
-                    <Grid container>
+                    <Grid container style={{position: 'relative'}}>
+                        <div className='readBg'></div>
                         <Grid item xs={12} md={4} style={{padding: '20px'}} >
                             <div style={{backgroundColor: '#111', borderRadius: '20px', padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: '1', minHeight: '380px'}} className='mobileAdj'>
                             <h1>The Weekly Rollup</h1>
