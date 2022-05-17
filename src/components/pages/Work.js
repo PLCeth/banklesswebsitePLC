@@ -1,9 +1,10 @@
 import { Container, Grid, Tabs, Typography, Button, Tab, Box } from '@mui/material'
 import * as React from 'react'
 import { Fade } from 'react-reveal';
+import { ContentSlider, Slider } from '../ContentSlider';
+import { slidesOne, slidesTwo } from '../workSlides';
 
 export const Work = (props) => {
-
     const [valueOne, setValueTabOne] = React.useState(1);
     const [valueTwo, setValueTabTwo] = React.useState(1);
     const [valueThree, setValueTabThree] = React.useState(1);
@@ -57,36 +58,13 @@ export const Work = (props) => {
                         <h1 style={{textAlign: 'center'}}>Consulting and Education</h1>
                         <p style={{textAlign: 'center'}}>Learn from Web3 experts</p>
                     </Grid>
-                    <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider'}}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueOne} onChange={handleChangeOne} aria-label="basic tabs example" >
-                            <Tab label="Bankless Academy" {...a11yProps(0)} className="fontTab" />
-                            <Tab label="Bankless Consulting" {...a11yProps(1)} className="fontTab" />
-                            <Tab label="Global Tax Consulatancy" {...a11yProps(2)} className="fontTab" />
-                            </Tabs>
-                        </Box>
-                        <TabPanel value={valueOne} index={0}>
-                            <div style={{minHeight: '200px'}}>Bankless Academy</div>
-                        </TabPanel>
-                        <TabPanel value={valueOne} index={1}>
-                            <div style={{minHeight: '200px'}}>
-                                { /* Bankless Consulting */ }
-                                <Grid container>
-                                    <Grid item xs={12} md={6} style={{padding: '25px'}}>
-                                        <img src={process.env.PUBLIC_URL + '/assets/media/bconsulting.png'} alt="Bankless Consulting" style={{maxWidth: '100%'}} />
-                                    </Grid>
-                                    <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
-                                        <p className="biggerText">Our Web3-native consulting service draws on the expertise of bDAO members to help DAOs launch and scale their presence.
-                                            Bankless Consultancy also helps traditional organizations take the first step into Web3.</p> 
-                                        <a href="https://www.banklessconsulting.com/" target="_blank" rel="noreferrer" className='destyle'><Button variant="contained" color="error">Visit Bankless Consulting</Button></a>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={valueOne} index={2}>
-                            <div style={{minHeight: '200px'}}>Global Tax Consulatancy</div>
-                        </TabPanel>
+
+                    <Grid item xs={12} md={12}>
+                        <ContentSlider slides={slidesOne} />
                     </Grid>
+
+
+
                 </Grid>
 
                 <Grid container>
@@ -95,22 +73,7 @@ export const Work = (props) => {
                         <p style={{textAlign: 'center'}}>Level-up your organization with cutting-edge tooling</p>
                     </Grid>
                     <Grid item xs={12} md={12} style={{paddingTop: '100px'}}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}  style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Tabs value={valueTwo} onChange={handleChangeTwo} aria-label="basic tabs example">
-                            <Tab label="Degen" {...a11yProps(0)} className="fontTab" />
-                            <Tab label="Bounty Board" {...a11yProps(1)}  className="fontTab"/>
-                            <Tab label="DAO Dash" {...a11yProps(2)}  className="fontTab"/>
-                            </Tabs>
-                        </Box>
-                        <TabPanel value={valueTwo} index={0}>
-                            <div style={{minHeight: '200px'}}>Degen</div>
-                        </TabPanel>
-                        <TabPanel value={valueTwo} index={1}>
-                            <div style={{minHeight: '200px'}}>Bounty Board</div>
-                        </TabPanel>
-                        <TabPanel value={valueTwo} index={2}>
-                            <div style={{minHeight: '200px'}}>DAO Dash</div>
-                        </TabPanel>
+                        <ContentSlider slides={slidesTwo} />
                     </Grid>
                 </Grid>
 
