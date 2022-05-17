@@ -16,7 +16,7 @@ export const Listen = (props) => {
                         <a href="https://open.spotify.com/show/1jLNOoJv77K733rZzL4c6b" target="_blank" rel="noreferrer" className='destyle'><Button color="error" variant="contained">Podcast Hatchery</Button></a>
                         </Fade>
                     </Grid>
-                    <Grid item xs={12} md={6} >
+                    <Grid item xs={12} md={6} style={{overflow: 'hidden'}}>
                         <Slide up>
                         <img src={process.env.PUBLIC_URL + '/assets/media/podcast-hatchery.webp'} alt="podcast-hatchery" style={{maxWidth: '100%'}} />
                         </Slide>

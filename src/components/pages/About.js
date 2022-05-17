@@ -85,7 +85,7 @@ export const About = (props) => {
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{minHeight: '500px'}}>
-
+                    <div style={{textAlign: 'center'}}><img src={process.env.PUBLIC_URL + '/assets/media/chakra.png'} alt="chakra" style={{maxWidth: '100%'}} /></div>
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
@@ -97,9 +97,11 @@ export const About = (props) => {
                 </Grid>
             </Container>
 
+            <Container>
             <div style={{padding: '20px', minHeight: '200px'}}>
                 <h2 style={{textTransform: 'uppercase'}}>Our Values</h2>
             </div>
+            </Container>
 
             <Container>
 
