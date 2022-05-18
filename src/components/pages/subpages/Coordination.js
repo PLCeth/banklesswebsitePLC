@@ -1,6 +1,6 @@
 import { Container, Grid, Button } from '@mui/material'
 import * as React from 'react'
-
+import { Fade } from 'react-reveal'
 
 export const Coordination = (props) => {
 
@@ -28,21 +28,27 @@ export const Coordination = (props) => {
                     <h1 style={{borderBottom: '2px solid #fff2', paddingBottom: '10px'}}>Working</h1>
                 </Grid>
                 <Grid item xs={12} md={12}>
+                    <Fade>
                     <Stack stack={stackOne} />
+                    </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
                     <h1 style={{borderBottom: '2px solid #fff2', paddingBottom: '10px'}}>Paying</h1>
                 </Grid>
                 <Grid item xs={12} md={12}>
+                    <Fade>
                     <Stack stack={stackTwo} />
+                    </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
                     <h1 style={{borderBottom: '2px solid #fff2', paddingBottom: '10px'}}>Governing</h1>
                 </Grid>
                 <Grid item xs={12} md={12}>
+                    <Fade>
                     <Stack stack={stackThree} />
+                    </Fade>
                 </Grid>
             </Grid>
         </Container>
