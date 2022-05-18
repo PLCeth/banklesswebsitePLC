@@ -29,7 +29,7 @@ export const Projects = (props) => {
                 
                 <Grid item xs={12} md={6} style={{padding: '20px'}}  order={{xs: 2, md: 2}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/banklessc.png'} alt="Bankless consulting" style={{maxWidth: '100%', borderRadius: '30px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/banklessc.webp'} alt="Bankless consulting" style={{maxWidth: '100%', borderRadius: '30px'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={6}  order={{xs: 3, md: 3}}
@@ -52,7 +52,7 @@ export const Projects = (props) => {
                 <Grid item xs={12} md={6}  order={{xs: 3, md: 4}} 
                     style={{padding: '20px', textAlign: 'center'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/DEGEN-logo_250.png'} alt="degen project" style={{maxWidth: '100%', borderRadius: '30px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/DEGEN-logo_250.webp'} alt="degen project" style={{maxWidth: '100%', borderRadius: '30px'}} />
                     </Fade>
                 </Grid>
 
@@ -131,7 +131,7 @@ export const Projects = (props) => {
                 </Grid>
                 <Grid item xs={12} md={6}  order={{xs: 15, md: 16}} style={{padding: '20px', textAlign: 'center'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/DAO_Heat_Logo.png'} alt="DAO Heat" style={{maxWidth: '100%', borderRadius: '30px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/DAO_Heat_Logo.webp'} alt="DAO Heat" style={{maxWidth: '100%', borderRadius: '30px'}} />
                     </Fade>
                 </Grid>
 
@@ -183,7 +183,7 @@ export const Projects = (props) => {
                 </Grid>
                 <Grid item xs={12} md={6}  order={{xs: 23, md: 24}} style={{padding: '20px', textAlign: 'center'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/academy.png'} alt="bankless academy" style={{maxWidth: '100%', borderRadius: '30px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/academy.webp'} alt="bankless academy" style={{maxWidth: '100%', borderRadius: '30px'}} />
                     </Fade>
                 </Grid>
 
@@ -235,7 +235,7 @@ export const Projects = (props) => {
                 </Grid>
                 <Grid item xs={12} md={6}  order={{xs: 31, md: 32}} style={{padding: '20px', textAlign: 'center'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/first-quest.png'} alt="first quest" style={{maxWidth: '100%', borderRadius: '30px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/first-quest.webp'} alt="first quest" style={{maxWidth: '100%', borderRadius: '30px'}} />
                     </Fade>
                 </Grid>
 

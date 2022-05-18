@@ -27,7 +27,7 @@ export const Work = (props) => {
 
             <Grid container>
                 <Grid item xs={12} md={12} style={{textAlign: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/wwus.png'} alt="Work with Us" style={{maxWidth: '100%'}}/>
+                    <img src={process.env.PUBLIC_URL + '/assets/media/wwus.webp'} alt="Work with Us" style={{maxWidth: '100%'}}/>
                 </Grid>
             </Grid>
             </Fade>

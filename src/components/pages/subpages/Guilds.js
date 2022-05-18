@@ -28,7 +28,7 @@ export const Guilds = (props) => {
 
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 2, md:2}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/analytic-guild.png'} alt="analytics guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/analytic-guild.webp'} alt="analytics guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 3, md:3}}
@@ -52,13 +52,13 @@ export const Guilds = (props) => {
                 </Grid>
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 3, md: 4}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/eye-analytics.png'} alt="audio visual guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/eye-analytics.webp'} alt="audio visual guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 5, md:5}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/happy-faces.png'} alt="daolationships guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/happy-faces.webp'} alt="daolationships guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 6, md:6}}
@@ -82,13 +82,13 @@ export const Guilds = (props) => {
                 </Grid>
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 7, md:8}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/design-guild.png'} alt="design guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/design-guild.webp'} alt="design guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={5} style={{padding: '25px'}}  order={{xs: 9, md:9}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/dev-guild.png'} alt="dev guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/dev-guild.webp'} alt="dev guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7}  order={{xs: 10, md:10}}
@@ -112,13 +112,13 @@ export const Guilds = (props) => {
                 </Grid>
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 11, md:12}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/edu-guild.png'} alt="education guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/edu-guild.webp'} alt="education guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 13, md:13}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/legal-guild.png'} alt="dev guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/legal-guild.webp'} alt="dev guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 14, md:14}}
@@ -143,13 +143,13 @@ export const Guilds = (props) => {
                 <Grid item xs={12} md={5} order={{xs: 15, md:16}}
                     style={{padding: '25px'}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/marketing-guild.png'} alt="marketing guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/marketing-guild.webp'} alt="marketing guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={5} order={{xs: 17, md:17}} style={{padding: '25px'}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/operation-guild.png'} alt="operations guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/operation-guild.webp'} alt="operations guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 18, md:18}} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: '20px'}}>
@@ -171,14 +171,14 @@ export const Guilds = (props) => {
                 </Grid>
                 <Grid item xs={12} md={5} order={{xs: 19, md:20}} style={{padding: '25px'}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/research-guild.png'} alt="research guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/research-guild.webp'} alt="research guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
 
                 <Grid item xs={12} md={5} order={{xs: 21, md:21}} style={{padding: '25px'}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/treasury-guild.png'} alt="treasury guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/treasury-guild.webp'} alt="treasury guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 22, md:22}}
@@ -201,13 +201,13 @@ export const Guilds = (props) => {
                 </Grid>
                 <Grid item xs={12} md={5} style={{padding: '25px'}} order={{xs: 23, md:24}}>  
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/translators-guild.png'} alt="translators guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/translators-guild.webp'} alt="translators guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
 
                 <Grid item xs={12} md={5} order={{xs: 25, md:25}} style={{padding: '25px'}}>  
-                    <img src={process.env.PUBLIC_URL + '/assets/media/writers-guild.png'} alt="writers guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/writers-guild.webp'} alt="writers guild" style={{maxWidth: '100%'}} />
                 </Grid>
                 <Grid item xs={12} md={7} order={{xs: 26, md:26}} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: '20px'}}>
                     <h2 style={{textTransform: 'uppercase'}}>WRITERS GUILD</h2>

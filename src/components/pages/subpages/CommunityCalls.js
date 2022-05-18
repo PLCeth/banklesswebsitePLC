@@ -36,7 +36,7 @@ export const CommunityCalls = (props) => {
 
                 <Grid item xs={12} md={6}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/instructor.png'} alt="instructor" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/instructor.webp'} alt="instructor" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
 
@@ -52,7 +52,7 @@ export const CommunityCalls = (props) => {
                     <div className='ccformatBG'>
                         <Grid container>
                             <Grid item xs={12} md={4}>
-                                <img src={process.env.PUBLIC_URL + '/assets/media/Dev-Guild-banner.png'} alt="Dev guild" style={{maxWidth: '100%'}} />
+                                <img src={process.env.PUBLIC_URL + '/assets/media/Dev-Guild-banner.webp'} alt="Dev guild" style={{maxWidth: '100%'}} />
                             </Grid>
                             <Grid item xs={12} md={8} style={{padding: '20px'}}>
                                 <h1>The CC Format</h1>
@@ -72,7 +72,7 @@ export const CommunityCalls = (props) => {
                             
                 <Grid item xs={12} md={6} style={{textAlign: 'center', padding: '20px'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/weeklyupdates.png'} alt="Dev guild" style={{maxWidth: '100%'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/weeklyupdates.webp'} alt="Dev guild" style={{maxWidth: '100%'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={6} style={{display: 'flex', flexDirection: 'column'}}>
@@ -103,7 +103,7 @@ export const CommunityCalls = (props) => {
                 <Grid item xs={12} md={4} >
                     <Fade>
                     <div style={{textAlign:'center', padding: '20px'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/bell-01.png'} alt="bell" style={{maxWidth: '100%', textAlign: 'center'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/bell-01.webp'} alt="bell" style={{maxWidth: '100%', textAlign: 'center'}} />
                     </div>
                     <p style={{textAlign:'center'}}>Add the Weekly CC to your calendar!</p>
                     <div style={{textAlign:'center'}}>

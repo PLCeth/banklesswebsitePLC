@@ -36,7 +36,7 @@ export const Portal = (props) => {
             
                 <Grid item xs={12} md={5} style={{padding: '25px'}}>
                     <Fade>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/DAO-Punk-Invest.png'} alt="dao punks" style={{maxWidth: '100%', borderRadius: '20px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/DAO-Punk-Invest.webp'} alt="dao punks" style={{maxWidth: '100%', borderRadius: '20px'}} />
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} style={{display: 'flex', justifyContent: 'space-around', flexDirection: 'column'}}>

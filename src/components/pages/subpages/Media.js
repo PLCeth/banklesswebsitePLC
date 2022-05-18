@@ -48,7 +48,7 @@ export const Media = (props) => {
                     <div style={{textAlign: 'center'}}>
                         <Grid container>
                             <Grid item xs={12} md={4}>
-                                <img src={process.env.PUBLIC_URL + '/assets/media/Dev-Guild-banner.png'} alt="dev guild" style={{maxWidth: '100%'}} />
+                                <img src={process.env.PUBLIC_URL + '/assets/media/Dev-Guild-banner.webp'} alt="dev guild" style={{maxWidth: '100%'}} />
                             </Grid>
                             <Grid item xs={12} md={8} style={{textAlign: 'left', padding: '20px'}}>
                                 <h1>For Collaborators and Partners:</h1>
