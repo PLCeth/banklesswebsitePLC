@@ -1,6 +1,6 @@
 import { Grid, Container, Button } from '@mui/material'
 import * as React from 'react'
-import { Slide } from 'react-reveal'
+import { Slide, Fade } from 'react-reveal'
 
 
 export const Portal = (props) => {
@@ -18,34 +18,39 @@ export const Portal = (props) => {
         <div>
             <Grid container style={{justifyContent: 'center', padding: '20px'}}>
                 <Grid item xs={12} md={6}>
+                    <Fade>
                     <h1 style={{textAlign: 'center'}}>Portal To Nodes</h1>
                     <div className='divider' style={{maxWidth: '500px', marginTop: '0'}}></div>
                     <p className='centered' style={{fontSize: '1.5em'}} >BanklessDAO is only a part of a larger <span style={{color: '#f00'}}>ecosystem of nodes </span>
                      that amplify the Bankless movement.</p> 
+                     </Fade>
                 </Grid>
             </Grid> 
 
             <Container>
             <Grid container>
-                <Grid item xs={12} md={12} style={{minHeight: '300px', backgroundColor: '#fff'}} >
+                <Grid item xs={12} md={12} style={{minHeight: '300px', backgroundColor: '#fff2'}} >
 
                 </Grid>
 
             
                 <Grid item xs={12} md={5} style={{padding: '25px'}}>
+                    <Fade>
                     <img src={process.env.PUBLIC_URL + '/assets/media/DAO-Punk-Invest.png'} alt="dao punks" style={{maxWidth: '100%', borderRadius: '20px'}} />
+                    </Fade>
                 </Grid>
                 <Grid item xs={12} md={7} style={{display: 'flex', justifyContent: 'space-around', flexDirection: 'column'}}>
+                    <Slide up>
                     <h1>DAO PUNKS</h1>
                     <p className='textWreck'>
                     Is a node within the Bankless ecosystem that helps contributors transition to full-time DAO. DAOpunk NFTs designed by Crypto Bushi allow access to the Discord server. Join to connect with other punks making the journey to liberating, decentralized work.
                     </p>
                     <Button color="error" variant="contained">Invest in a DAOPunk NFT</Button>
+                    </Slide>
                 </Grid>
 
 
                 <Grid item xs={12} md={12} style={{paddingTop: '50px'}}>
-
                     <Slide bottom>
                     <h2 style={{textTransform: 'uppercase', textAlign: 'center'}}>BANKLESS HQ</h2>
                     <div className='divider'></div>

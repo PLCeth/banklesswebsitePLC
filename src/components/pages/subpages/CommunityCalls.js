@@ -1,6 +1,6 @@
 import { Container, Grid, Button } from '@mui/material'
 import * as React from 'react'
-
+import { Fade, Slide } from 'react-reveal'
 
 export const CommunityCalls = (props) => {
     React.useEffect(() => {
@@ -18,28 +18,37 @@ export const CommunityCalls = (props) => {
 
             <Grid container style={{justifyContent: 'center'}}>
                 <Grid item xs={12} md={6}>
+                    <Fade>
                     <h1 style={{textAlign: 'center'}}>Community Calls</h1>
                     <div className='divider' style={{maxWidth: '500px', marginTop: '0'}}></div>
                     <p className='centered textWreck'>JOIN THE ENTIRE BANKLESS COMMUNITY ON FRIDAYS AT 4PM UTC</p> 
+                    </Fade>
                 </Grid>
                 <Grid item xs={12} md={12} className='textWreck centered'>
+                    <Slide up>
                     <p>Community Calls are the anchor of the BanklessDAO community. Every Friday at 4pm UTC we gather 
                         for one hour on the Community Call Voice Stage to hear key governance updates, share hype news, 
                         and have roundtable discussions on important topics in the DAO. For those unable to join our Discord, 
                         catch the live stream on 
                     <a href="https://www.twitch.tv/banklessdao" target="_blank" rel="noreferrer" className='destyle' style={{color: '#f00'}}> BanklessDAO Twitch.</a></p>
+                    </Slide>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
+                    <Fade>
                     <img src={process.env.PUBLIC_URL + '/assets/media/instructor.png'} alt="instructor" style={{maxWidth: '100%'}} />
+                    </Fade>
                 </Grid>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+                    <Slide up>
                     <h1>WANT ALPHA?</h1>
                     <p style={{paddingTop: '20px'}}>Join the weekly CCs!</p>
+                    </Slide>
                 </Grid>
 
                 <Grid item xs={12} md={12}>
+                    <Fade>
                     <div className='ccformatBG'>
                         <Grid container>
                             <Grid item xs={12} md={4}>
@@ -56,23 +65,29 @@ export const CommunityCalls = (props) => {
                             </Grid>
                         </Grid>
                     </div>
+                    </Fade>
                 </Grid>
 
 
                             
                 <Grid item xs={12} md={6} style={{textAlign: 'center', padding: '20px'}}>
+                    <Fade>
                     <img src={process.env.PUBLIC_URL + '/assets/media/weeklyupdates.png'} alt="Dev guild" style={{maxWidth: '100%'}} />
+                    </Fade>
                 </Grid>
                 <Grid item xs={12} md={6} style={{display: 'flex', flexDirection: 'column'}}>
+                    <Slide up>
                     <h1>Weekly Updates</h1>
                     <p>There’s so much going on in the DAO that we have two newsletters designed to share critical updates without crowding the discussions happening in the call. Get up to speed by reading:</p>
                     <ul>
                         <li>The Weekly Rollup Newsletter released Fridays.</li>
                         <li>The Gearing Up Newsletter released Tuesdays.</li>
                     </ul>
+                    </Slide>
                 </Grid>
 
                 <Grid item xs={12} md={8} className='textWreck' style={{display: 'flex', flexDirection: 'column'}}>
+                    <Slide up>
                     <h1>Evolution</h1>
                     <p>The CC format was designed by the community via forum discussions and continues to evolve. 
                         <a href="https://twitter.com/samanthajmarin" target="_blank" rel="noreferrer" className='destyle' style={{color: '#fff'}}> Samanthaj</a> and 
@@ -82,9 +97,11 @@ export const CommunityCalls = (props) => {
                         <li>CC Revamp Draft 2</li>
                         <li>Gearing Up Newsletter Proposal</li>
                     </ul>
+                    </Slide>
                 </Grid>
 
                 <Grid item xs={12} md={4} >
+                    <Fade>
                     <div style={{textAlign:'center', padding: '20px'}}>
                     <img src={process.env.PUBLIC_URL + '/assets/media/bell-01.png'} alt="bell" style={{maxWidth: '100%', textAlign: 'center'}} />
                     </div>
@@ -92,6 +109,7 @@ export const CommunityCalls = (props) => {
                     <div style={{textAlign:'center'}}>
                     <Button variant="contained" color="error">Add to Calendar</Button>
                     </div>
+                    </Fade>
                 </Grid>
 
             </Grid>
