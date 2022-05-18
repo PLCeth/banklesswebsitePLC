@@ -1,13 +1,13 @@
 import { Button, Container, Grid } from '@mui/material'
 import * as React from 'react'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { Fade, Slide } from 'react-reveal';
 import { Circles } from '../Circles';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+import { Arrow } from '../Utils';
 
 export const HomePage = (props) => {
-
-
     return (
         <div style={{paddingBottom: '100px'}}>
             <Fade>
@@ -27,7 +27,6 @@ export const HomePage = (props) => {
                 <source src={process.env.PUBLIC_URL + '/assets/media/DAOhandLogo.mp4'} type="video/mp4" />
             </video>
             </Fade>
-
 
             <Container>
                 <Grid container>
@@ -52,7 +51,7 @@ export const HomePage = (props) => {
                                 <div className="smallDivider"></div>
                                 <div style={{paddingTop: '15px', paddingLeft: '20px'}}>
                                 <span style={{padding: '10px', paddingTop: '25px', borderBottom: '1px solid #222'}}>
-                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <ArrowForwardIosIcon className='arrowIcon'/></a>
+                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <Arrow /></a>
                                 </span>
                                 </div>
                             </div>
@@ -73,7 +72,7 @@ export const HomePage = (props) => {
 
                                 <div style={{paddingTop: '15px', paddingLeft: '20px'}}>
                                 <span style={{padding: '10px', paddingTop: '25px', borderBottom: '1px solid #222'}}>
-                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <ArrowForwardIosIcon className='arrowIcon'/></a>
+                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <Arrow /></a>
                                 </span>
                                 </div> 
                             </div>
@@ -94,7 +93,7 @@ export const HomePage = (props) => {
 
                                 <div style={{paddingTop: '15px', paddingLeft: '20px'}}>
                                 <span style={{padding: '10px', paddingTop: '25px', borderBottom: '1px solid #222'}}>
-                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <ArrowForwardIosIcon className='arrowIcon'/></a>
+                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <Arrow /></a>
                                 </span>
                                 </div> 
                             </div>
@@ -116,7 +115,7 @@ export const HomePage = (props) => {
 
                                 <div style={{paddingTop: '15px', paddingLeft: '20px'}}>
                                 <span style={{padding: '10px', paddingTop: '25px', borderBottom: '1px solid #222'}}>
-                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <ArrowForwardIosIcon className='arrowIcon'/></a>
+                                    <a href={'#k'} style={{color: '#FFF', textDecoration: 'none'}}>Start <Arrow /></a>
                                 </span>
                                 </div> 
                             </div>
@@ -162,8 +161,6 @@ export const HomePage = (props) => {
 
 
                 <Grid container style={{paddingTop: '100px'}}>
-
-
                     <Grid item xs={12} md={3} style={{justifyContent: 'center', display: 'flex', marginTop: '20px'}}>
                         <Slide bottom>
                         <img src={process.env.PUBLIC_URL + '/assets/media/david-hoffman.webp'} alt="David Hoffman" className='circledPic' style={{boxShadow: '-18px 0px 35px red'}} />
@@ -196,41 +193,18 @@ export const HomePage = (props) => {
 
                     { /* People Grid */ }
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
-
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Kouros</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3 >Grendel</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3 >IcedCool</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/chuck.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Chuck</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/montgomery.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Montgomery</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/lion917.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Lion917</h3>
-                        </Grid>
-
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/links.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Links</h3>
-                        </Grid>
-
+                        { TreasuryGuild.map((person) => {
+                            return (
+                                <Grid item xs={12} md={4} className="circleP">
+                                    <img src={process.env.PUBLIC_URL + person.image} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                                    <h3>{ person.name }
+                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></h3>
+                                </Grid>
+                            )
+                        })}
                     </Grid>
 
                     <Grid item xs={12} md={12} style={{paddingTop: '75px'}}>
-
                         <Slide bottom>
                         <h1 style={{textTransform: 'uppercase', textAlign: 'center'}}>Grants Committee Members</h1>
                         <div className='divider'></div>
@@ -239,34 +213,15 @@ export const HomePage = (props) => {
 
                     <Fade >
                     <Grid container style={{display: 'flex', justifyContent: 'center'}}>
-                        <Grid item xs={12} md={4} className="circleP">
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/kouros.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Kouros</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/0xlucas.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3 >0xLucas</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/aboveaveragejoe.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3 >AboveAverageJoe</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/grendel.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>Grendel</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/frogmonkee.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>FrogMonkee</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/icedcool.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>IcedCool</h3>
-                        </Grid>
-                        <Grid item xs={12} md={4} style={{textAlign: 'center'}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/media/people/redvan.webp'} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                            <h3>RedVan</h3>
-                        </Grid>
+                        { GrantsCommittee.map((person) => {
+                            return (
+                                <Grid item xs={12} md={4} className="circleP">
+                                    <img src={process.env.PUBLIC_URL + person.image} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
+                                    <h3>{ person.name }
+                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></h3>
+                                </Grid>
+                            )
+                        })}
                     </Grid>
                     </Fade>
                 </Grid>
@@ -280,10 +235,37 @@ export const HomePage = (props) => {
                         <Circles />
                     </Grid>
                 </Grid>
-
-
             </Container>
         </div>
 
     )
 }
+
+class Person {
+    constructor(name, image, link) {
+        this.name = name;
+        this.link = link;
+        this.image = image;
+    }
+}
+
+const TreasuryGuild = [
+    new Person("Kouros", "/assets/media/people/kouros.webp", "https://twitter.com/davidcoleto"),
+    new Person("Grendel", "/assets/media/people/grendel.webp", "https://twitter.com/GrendelMarco"),
+    new Person("IcedCool", "/assets/media/people/icedcool.webp", "https://twitter.com/icedcool_eth"),
+    new Person("Chuck", "/assets/media/people/chuck.webp", "https://twitter.com/mr_cgc"),
+    new Person("Montgomery", "/assets/media/people/montgomery.webp", "https://twitter.com/WPMonty"),
+    new Person("Lion917", "/assets/media/people/lion917.webp", "https://twitter.com/lion917_eth"),
+    new Person("Links", "/assets/media/people/links.webp", "https://twitter.com/almithani"),
+]
+
+const GrantsCommittee = [
+    new Person("Kouros", "/assets/media/people/kouros.webp", "https://twitter.com/davidcoleto"),
+    new Person("0xLucas", "/assets/media/people/0xlucas.webp", "https://twitter.com/0x_Lucas"),
+    new Person("AboveAverageJoe", "/assets/media/people/aboveaveragejoe.webp", "https://twitter.com/Abv_Avg_Joe"),
+    new Person("Grendel", "/assets/media/people/grendel.webp", "https://twitter.com/GrendelMarco"),
+    new Person("FrogMonkee", "/assets/media/people/frogmonkee.webp", "https://twitter.com/frogmonkee"),
+    new Person("IcedCool", "/assets/media/people/icedcool.webp", "https://twitter.com/icedcool_eth"),
+    new Person("RedVan", "/assets/media/people/redvan.webp", "https://mobile.twitter.com/0xredvan"),
+]
+
