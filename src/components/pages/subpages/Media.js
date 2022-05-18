@@ -39,7 +39,7 @@ export const Media = (props) => {
                     <div style={{textAlign: 'center'}}><Button color="error" variant="contained">Join The Server</Button></div>
                 </Grid>
 
-                <Grid item xs={12} md={12} style={{padding: '20px', marginTop: '50px', paddingTop: '60px', backgroundColor: '#fff2', borderRadius: '20px'}}>
+                <Grid item xs={12} md={12} style={{padding: '20px', marginTop: '50px', paddingTop: '20px', backgroundColor: '#fff2', borderRadius: '20px'}}>
                     <div style={{textAlign: 'center'}}>
                         <Grid container>
                             <Grid item xs={12} md={4}>
