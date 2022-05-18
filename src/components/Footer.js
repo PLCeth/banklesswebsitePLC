@@ -1,5 +1,6 @@
 import { Grid, Container } from '@mui/material'
 import * as React from 'react'
+import { IconBar } from './Utils'
 
 
 export const Footer = (props) => {
@@ -17,7 +18,7 @@ export const Footer = (props) => {
                         of greater freedom.
                     </p>
                     <div>
-
+                        <IconBar />
                     </div>
                 </Grid>
                 <Grid item xs={12} md={6}>

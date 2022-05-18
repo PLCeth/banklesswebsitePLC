@@ -7,6 +7,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import { Arrow } from '../Utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -116,7 +117,7 @@ export const About = (props) => {
                     <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column'}}>
                         <h1>WANT ALPHA?</h1>
                         <h2>Join BanklessDAO</h2>
-                        <a href="#k" style={{color: '#FFF'}}>RSA</a>
+                        <a href="#k" style={{color: '#FFF'}}>RSA <Arrow /></a>
                     </Grid>
 
                     <Grid item xs={12} md={12} style={{paddingTop: '30px'}}>

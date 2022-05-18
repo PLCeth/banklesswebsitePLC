@@ -231,6 +231,10 @@ h1, h2, h3, h4, h5, h6 {
   .mobileAdj {
     min-height: 0 !important;
   }
+
+  .justifyMob {
+    justify-content: center !important;
+  }
 }
 
 .bgRed {
