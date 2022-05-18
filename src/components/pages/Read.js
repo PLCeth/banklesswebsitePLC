@@ -21,14 +21,14 @@ export const Read = (props) => {
                 <Grid item xs={12} md={3}>
                     <Slide up>
                     <img src={process.env.PUBLIC_URL + '/assets/media/icon_medium.webp'} alt="medium" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
-                    <h3>Medium Article <Arrow /></h3>
+                    <a href="https://medium.com/bankless-dao" target="_blank" rel="noreferrer" className='destyle'><h3>Medium Article <Arrow /></h3></a>
                     <p className='textWreck' style={{maxWidth: '250px'}}>Crypto and Web3 commentary representing the voice of the DAO.</p>
                     </Slide>
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <Slide up>
                     <img src={process.env.PUBLIC_URL + '/assets/media/icon_mirror.webp'} alt="mirror" style={{backgroundColor: '#fff3', padding: '10px', borderRadius: '10px'}} />
-                    <h3>Mirror Article <Arrow /></h3>
+                    <a href="https://banklessdao.mirror.xyz/" target="_blank" rel="noreferrer" className='destyle'><h3>Mirror Article <Arrow /></h3></a>
                     <p className='textWreck' style={{maxWidth: '250px'}}>BanklessDAO history and season recaps posted publicly.</p>
                     </Slide>
                 </Grid>
