@@ -16,9 +16,9 @@ PLC.eth's Version
 
 # Infra
 
-Published to AWS S3 Bucket with GitHub Workflows.  Cloudfront CDN in place in front of S3.  (no vercel)
+Published to AWS S3 Bucket with GitHub Workflows.  Cloudfront CDN in place in front of S3 bucket.  Route53 DNS resolves to Cloudfront.  (no vercel)
 
-live s3 @ http://bankless.h3xdump.com
+live @ http://bankless.h3xdump.com
 
 # Bankless DAO Useful Links
 
