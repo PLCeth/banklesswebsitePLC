@@ -286,6 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .newMemberRight {
@@ -299,7 +300,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
+
+.newMemberLeft:hover, .newMemberRight:hover {
+  background-color: #999;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 
 .newMemberSlide {
   background-color: #f00;
