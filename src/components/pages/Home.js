@@ -98,7 +98,7 @@ export const HomePage = (props) => {
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{paddingTop: '100px', paddingBottom: '100px'}}>
-                    <h1 style={{textTransform: 'uppercase', color: '#444', textAlign: 'center', letterSpacing: '10px'}}>The Most Widely-held social token</h1>
+                    <h1 style={{textTransform: 'uppercase', color: '#777', textAlign: 'center', letterSpacing: '10px'}}>The Most Widely-held social token</h1>
                 </Grid>
             </Grid>
 

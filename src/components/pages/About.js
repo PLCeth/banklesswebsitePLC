@@ -233,8 +233,8 @@ export const About = (props) => {
                 </Grid>
 
                 <Grid item xs={12} md={12}>
-                    <video  autoPlay loop muted id="background-video">
-                        <source src={process.env.PUBLIC_URL + '/assets/media/joinus.mp4'} type="video/mp4" />
+                    <video  autoPlay loop muted id="background-video" controls style={{minHeight: '480px'}}>
+                        <source src={process.env.PUBLIC_URL + '/assets/media/joinus_scaled.mp4'} type="video/mp4" />
                     </video>
                 </Grid>
 
