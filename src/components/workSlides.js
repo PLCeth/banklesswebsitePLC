@@ -1,5 +1,4 @@
 import { Grid, Button } from '@mui/material'
-import { Fade } from 'react-reveal'
 import { Slider } from './ContentSlider'
 
 export const slidesOne = [
