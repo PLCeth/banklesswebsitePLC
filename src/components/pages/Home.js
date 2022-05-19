@@ -134,12 +134,12 @@ export const HomePage = (props) => {
             <Grid container>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.webp'} alt="Bankless Coin" style={{maxWidth: '300px'}}/>
+                    <img src={process.env.PUBLIC_URL + '/assets/media/bankless-coin.webp'} alt="Bankless Coin" style={{maxWidth: '250px'}}/>
                     <h2 style={{paddingTop: '20px'}}>BANK Token</h2>
                 </Grid>
 
                 <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', textAlign: 'center', alignItems: 'center'}}>
-                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.webp'} alt="Ethereum" style={{maxWidth: '200px'}} />
+                    <img src={process.env.PUBLIC_URL + '/assets/media/ethereum-icon.webp'} alt="Ethereum" style={{maxWidth: '150px'}} />
                     <h2 style={{paddingTop: '20px'}}>Ethereum Blockchain</h2>
                 </Grid>
 

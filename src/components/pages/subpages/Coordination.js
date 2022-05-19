@@ -79,14 +79,14 @@ const Stack = (props) => {
 
     return (
         <Grid container style={{paddingBottom: '100px'}}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={3} style={{display: 'flex', flexDirection: 'column', paddingTop: '10px'}}>
                 { props.stack.map((stack) => {
                     return (
-                        <Button style={{color: '#FFF', textTransform: 'uppercase'}} onClick={changeId} data-id={stack.id}>{ stack.name }</Button>
+                        <Button style={{color: '#FFF', textTransform: 'uppercase', marginBottom: '10px', width: '100%', backgroundColor: '#fff1'}} onClick={changeId} data-id={stack.id}>{ stack.name }</Button>
                     )
                 })}
             </Grid>
-            <Grid item xs={12} md={9}>
+            <Grid item xs={12} md={9} style={{padding: '10px'}}>
                 <div style={{backgroundColor: '#111', borderRadius: '10px', padding: '20px'}}>
                     { props.stack[currentStack].content }
                 </div>
