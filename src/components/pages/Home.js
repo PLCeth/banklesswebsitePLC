@@ -34,7 +34,7 @@ export const HomePage = (props) => {
                         <h1 className='mainHeader'>Media and Social DAO Onboarding 1 billion people to crypto</h1>
                         <div className='divider'></div>
                         <p className='centered'>
-                            We're Headed West. <a href={'#k'} className='linkStyle'>Join Us</a>
+                            We're Headed West. <a href={'#k'} className='linkStyle'><Button color="error" style={{marginLeft: '10px'}} variant="contained">Join Us</Button></a>
                         </p>
                     </Grid>
                 </Grid>
