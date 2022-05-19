@@ -112,7 +112,7 @@ export const Governance = (props) => {
                     <Grid item xs={12} md={8}>
                         <Fade>
                         <div style={{backgroundColor: '#222', padding: '10px'}}>
-                            <Grid container style={{fontSize: '0.8em', fontWeight: 'normal'}}>
+                            <Grid container style={{fontSize: '0.8em'}}>
                                 <Grid item xs={6} md={6} style={{padding: '5px'}}>
                                     <div style={{backgroundColor: '#111', padding: '5px', borderRadius: '10px'}}>
                                     <h3 className='centered'>Funding Requested</h3>
@@ -124,82 +124,23 @@ export const Governance = (props) => {
                                     </div>
                                 </Grid>
 
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>Less than 50,000 BANK</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>25 voters</h3>
-                                    </div>
-                                </Grid>
+                                { Fundings.map((req) => {
+                                    return (
+                                        <Grid container>
+                                        <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                            <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                            <h3 className='centered'>{ req.title }</h3>
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={6} md={6} style={{padding: '5px'}}>
+                                            <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
+                                            <h3 className='centered'>{ req.votes }</h3>
+                                            </div>
+                                        </Grid>
+                                        </Grid>
+                                    )
+                                })}
 
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>50,001 - 250,000 BANK</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>31 voters</h3>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>250,001 - 500,000 BANK</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>40 voters</h3>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>500,001 - 1,000,000 BANK</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>51 voters</h3>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>Greater than 1,000,001 BANK</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>63 voters</h3>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>Governance proposals</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>63 voters</h3>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>Emergency proposals</h3>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={6} style={{padding: '5px'}}>
-                                    <div style={{backgroundColor: '#333', padding: '2px', borderRadius: '10px'}}>
-                                    <h3 className='centered'>91 voters</h3>
-                                    </div>
-                                </Grid>
                             </Grid>
                         </div>
                         </Fade>
@@ -211,7 +152,7 @@ export const Governance = (props) => {
                         <p className='textWreck'>A Season at bDAO is similar to a corporate quarter and generally lasts three months. They provide funding landmarks for bDAO coordinators and the Grants Committee. Each season has a fixed amount of BANK allocated to pay contributors in the DAO.</p>
                         <p className='textWreck' style={{color: '#fff'}}>Read our Seasonal Specifications on Mirror:</p>
                         <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <Button className="grayButt" >Season 1</Button>
+                            <Button className="grayButt">Season 1</Button>
                             <Button className="grayButt">Season 2</Button>
                             <Button className="grayButt">Season 3</Button>
                         </div>
@@ -266,3 +207,21 @@ export const Governance = (props) => {
         </div>
     )
 }
+
+
+class FundingReq {
+    constructor(title, votes) {
+        this.title = title;
+        this.votes = votes;
+    }
+}
+
+const Fundings = [
+    new FundingReq("Less than 50,000 BANK", "25 voters"),
+    new FundingReq("50,001 - 250,000 BANK", "31 voters"),
+    new FundingReq("250,001 - 500,000 BANK", "40 voters"),
+    new FundingReq("500,001 - 1,000,000 BANK", "51 voters"),
+    new FundingReq("Greater than 1,000,001 BANK", "63 voters"),
+    new FundingReq("Governance proposals", "63 voters"),
+    new FundingReq("Emergency proposals", "91 voters"),
+]
