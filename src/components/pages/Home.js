@@ -151,8 +151,8 @@ export const HomePage = (props) => {
                             return (
                                 <Grid item xs={12} md={4} className="circleP">
                                     <img src={process.env.PUBLIC_URL + person.image} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                                    <h3>{ person.name }
-                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></h3>
+                                    <div style={{fontWeight: 'bold', fontSize: '1.2em', paddingTop: '10px'}}>{ person.name }
+                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></div>
                                 </Grid>
                             )
                         })}
@@ -171,8 +171,8 @@ export const HomePage = (props) => {
                             return (
                                 <Grid item xs={12} md={4} className="circleP">
                                     <img src={process.env.PUBLIC_URL + person.image} alt="pic" className='circledPic' style={{boxShadow: '-8px 0px 13px red'}}  />
-                                    <h3>{ person.name }
-                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></h3>
+                                    <div style={{fontWeight: 'bold', fontSize: '1.2em', paddingTop: '10px'}}>{ person.name }
+                                    <a href={person.link} target="_blank" rel="noreferrer" className='destyle'><TwitterIcon style={{color: 'rgb(29, 155, 240)', width: '20px', height: '20px', marginLeft: '10px'}}></TwitterIcon></a></div>
                                 </Grid>
                             )
                         })}
