@@ -41,7 +41,7 @@ export const HomePage = (props) => {
             </Container>
 
             <video autoPlay loop muted id="background-video" playsInline>
-                <source src={process.env.PUBLIC_URL + '/assets/media/DAOhandLogo.mp4'} type="video/mp4" />
+                <source src={process.env.PUBLIC_URL + '/assets/media/DAOhscaled.mp4'} type="video/mp4" />
             </video>
             </Fade>
 
@@ -59,7 +59,7 @@ export const HomePage = (props) => {
                             <Grid item xs={12} md={6}>
                             <Fade>
                             <div className="gridBox">
-                                <img src={process.env.PUBLIC_URL + box.image} alt={box.page} className='gridImage'/>
+                                <img src={process.env.PUBLIC_URL + box.image} alt={box.page} className='gridImage' style={{maxWidth: '100%'}} />
                                 <div className="paddedBox">
                                     <h2 className='subHeader'>Media</h2>
                                     <p style={{padding: '20px', fontSize: '1.2em', color: '#bbb'}}>
